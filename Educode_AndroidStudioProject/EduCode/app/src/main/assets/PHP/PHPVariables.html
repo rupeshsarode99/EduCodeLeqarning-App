@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<h3>PHP 5 Variables</h3>
+Variables are "containers" for storing information.
+<h2>Creating (Declaring) PHP Variables</h2>
+Creating (Declaring) PHP Variables
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:black"><span style="color:red">&lt;?php</span><br>
+$txt = <span style="color:brown">"Hello world!"</span>;<br>
+$x = <span style="color:red">5</span>;<br>$y = <span style="color:red">10.5</span>;<br>
+<span style="color:red">?&gt;</span></span>
+ </div>
+ <p>After the execution of the statements above, the variable <b>$txt</b> will hold the value 
+<b>Hello world!</b>, the variable <strong>$x</strong> will hold the value <strong>5</strong>, 
+and the variable <strong>$y</strong> will hold the value <strong>10.5</strong>.</p>
+<p><b>Note:</b> When you assign a text value to a variable, put quotes around the value.</p>
+<p><strong>Note:</strong> Unlike other programming languages, PHP has no command 
+for declaring a variable. It is created the moment you first assign a value to 
+it.</p>
+<h3>PHP Variables</h3>
+A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+
+Rules for PHP variables:
+<ul>
+  <li>A variable starts with the $ sign, followed by the name of the variable</li>
+  <li>A variable name must start with a letter or the underscore character</li>
+  <li>A variable name cannot start with a number</li>
+  <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+  <li>Variable names are case-sensitive ($age and $AGE are two different variables)</li>
+</ul>
+<div class="w3-panel w3-note">
+<p>Remember that PHP variable names are case-sensitive!</p>
+</div>
+<h3>Output Variables
+</h3>
+The PHP echo statement is often used to output data to the screen.
+
+The following example will show how to output text and a variable:
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:black"><span style="color:red">&lt;?php</span><br>
+$txt = <span style="color:brown">"W3Schools.com"</span>;<br><span style="color:red">
+</span> <span style="color:mediumblue">echo</span> <span style="color:brown">"I love $txt!"</span>;<br><span style="color:red">?&gt;</span></span>
+ </div>
+ The following example will produce the same output as the example above:
+<h3>Example</h3>
+<div class="w3-code htmlHigh notranslate">
+<span style="color:black"><span style="color:red">&lt;?php</span><br>
+$txt = <span style="color:brown">"W3Schools.com"</span>;<br><span style="color:red">
+</span> <span style="color:mediumblue">echo</span> <span style="color:brown">"I love "</span> . $txt . <span style="color:brown">"!"</span>;<br><span style="color:red">?&gt;</span></span>
+ </div>
+ The following example will output the sum of two variables:
+
+<h3>Example</h3>
+<div class="w3-code htmlHigh notranslate">
+<span style="color:black"><span style="color:red">&lt;?php</span><br><span style="color:red">
+</span> $x = <span style="color:red">5</span>;<br>$y = <span style="color:red">4</span>;<br><span style="color:mediumblue">echo</span> $x + $y;<br><span style="color:red">?&gt;</span></span>
+ </div>
+ Note: You will learn more about the echo statement and how to output data to the screen in the next chapter.
+
+<h3>PHP Variables Scope</h3>
+In PHP, variables can be declared anywhere in the script.
+
+The scope of a variable is the part of the script where the variable can be referenced/used.
+
+PHP has three different variable scopes:
+<ul>
+  <li>local</li>
+  <li>global</li>
+  <li>static</li>
+</ul>
+<h3>Global and Local Scope
+</h3>
+A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function:
+
+<h3>Example</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span style="color:black"><span style="color:red">&lt;?php</span><br>$x = <span style="color:red">5</span>; <span style="color:green">// global scope<br></span><br><span style="color:mediumblue">function</span> myTest() {<br>&nbsp;&nbsp;&nbsp; <span style="color:green">// using x inside this function will generate an error<br></span>&nbsp;&nbsp;&nbsp; <span style="color:mediumblue">echo</span> <span style="color:brown">"&lt;p&gt;Variable x inside function is: $x&lt;/p&gt;"</span>;<br>} <br>myTest();<br><br><span style="color:mediumblue">echo</span> <span style="color:brown">"&lt;p&gt;Variable x outside function is: $x&lt;/p&gt;"</span>;<br><span style="color:red">?&gt;</span></span>
+ </div>
+ A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function:
+
+<h3>Example
+</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span style="color:black"><span style="color:red">&lt;?php</span><br><span style="color:mediumblue">function</span> myTest() {<br>&nbsp;&nbsp;&nbsp; $x = <span style="color:red">5</span>; <span style="color:green">// local scope<br></span>&nbsp;&nbsp;&nbsp; <span style="color:mediumblue">echo</span> <span style="color:brown">"&lt;p&gt;Variable x inside function is: $x&lt;/p&gt;"</span>;<br>} <br>myTest();<br><br><span style="color:green">// using x outside the function will generate an error<br></span><span style="color:mediumblue">echo</span> <span style="color:brown">"&lt;p&gt;Variable x outside function is: $x&lt;/p&gt;"</span>;<br><span style="color:red">?&gt;</span></span>
+ </div>
+
+
+</body>
+</html>

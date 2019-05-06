@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<h1>Python Database Connection</h1>
+<p>
+
+Programmers might expect that Python may make database programming more straightforward and painless job, the Python database API supply with database-neutral programming interface for different databases.<br>
+<p><span style="text-decoration: underline;">These are:</span> <ul><li>MySQL</li><li>SQLite</li><li>MS SQL</li><li>PostgreSQL</li><li>Informix</li><li>Sybase</li><li>Inter-base</li><li>Oracle etc….</li></ul><p>The <strong>DB-API</strong> is the standard for Python's database interface. <h2>What is Database?</h2><p>The database is a collection of organized information that can easily be used, managed, update, and they are classified according to their organizational approach. <p><span style="text-decoration: underline;">The Python Database interfaces are categorized into two. These are:</span> <h3>Generic Database Interface</h3><p>Most Python's database interface remains to <strong>Python's DB-API standard</strong> and most of the databases have ODBC support. Other than that Java database usually support JDBC and programmers can work with that from Jython.<br /><hr><div class="my-2 text-center"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2177966827319387" data-ad-slot="6066759642" data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div><hr> <h3>Relational Database System Interface</h3><p><span style="text-decoration: underline;">This employs a relational model with support of SQL.  Lists of general-purpose database systems are:</span> <ol><li>Firebird</li><li>Informix</li><li>SAP DB</li><li>MS SQL server</li><li>Access</li><li>Ingres</li><li>MySQL etc….</li></ol><p><span style="text-decoration: underline;">Other than that, the lists of data warehouse database systems are:</span> <ol><li>Teradata</li><li>IBM Netezza</li></ol><p><span style="text-decoration: underline;">There are other non-relational categories of databases. These are:</span> <ul><li>Record-based databases</li><li>XML databases</li><li>Graph databases</li></ul><p><span style="text-decoration: underline;">Native Python databases are:</span> <ul><li>SnakeSQL</li><li>Buzhug</li></ul><h3>What Database API Includes</h3><p>Using Python structure, <strong>DB-API</strong> provides standard and support for working with databases. The API consists of: <ul><li>Bring in the API module</li><li>Obtain database connection</li><li>Issue SQL statements and then store procedures</li><li>Close the connection</li></ul><h2>Benefits of Python Database Programming</h2><ul><li>Programming in Python is considerably simple and efficient with compared to other languages, so as the database programming</li><li>Python database is portable, and the program is also portable so both can give an advantage in case of portability</li><li>Python supports SQL cursors</li><li>It also supports Relational Database systems</li><li>The API of Python for the database is compatible with other databases also</li><li>It is platform independent</li></ul><h2>Defining MySQL Database</h2><p>It is an interface for associating SQL database server from Python and uses the DB-API of Python to work. <h3>How to Implement MySQL Database</h3><p>To use MySQL database using Python, you need first to install it on your machine; then just type the script given below to implement MySQL within your program.
+<pre><code class="prettyprint">import MySQLdb
+</code></pre><h3>Database Program Using Python</h3><pre><code class="prettyprint">
+
+# importing the module
+import MySQLdb
+
+# opening a database connection
+db = MySQLdb.connect  ("localhost","testprog","stud","PYDB")
+
+# define a cursor object
+cursor = conn.cursor
+
+# drop table if exists
+Cursor.execute("IF STUDENT TABLE EXISTS DROP IT")
+
+# query
+sql = "CREATE TABLE STUDENT (NAME CHAR(30) NOT NULL, CLASS CHAR(5), AGE INT, GENDER CHAR(8), MARKS INT"
+
+# execute query
+cursor.execute(sql)
+
+# close object
+cursor.close()
+
+# close connection
+conn.close()
+</div></code></pre><h2></h2><p>There are various operations that programmers can perform within Python program. To deal with these statements, you must have a good knowledge of Database programming and SQL. <table border="1"><tbody><tr><th width="200">Environment Variables</th><th>Description</th></tr><tr><td>INSERT</td><td>It is an SQL statement used to create a record into a table.</td></tr><tr><td>READ</td><td>Fetches useful information from the database.</td></tr><tr><td>UPDATE</td><td>It is used update those available or already existing record(s).</td></tr><tr><td>DELETE</td><td>It is used to delete records from the database.</td></tr><tr><td>ROLLBACK</td><td>It works like "undo", which reverts all the changes that you have made.</td></tr></tbody></table>
+
+</p>
+</body>
+</html>

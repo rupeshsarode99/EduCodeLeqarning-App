@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>JAVA Operators</h1>
+<p>
+	Java provides a rich set of operators to manipulate variables. We can divide all the Java operators into the following groups −
+	<ul class="list">
+<li>Arithmetic Operators</li>
+<li>Relational Operators</li>
+<li>Bitwise Operators</li>
+<li>Logical Operators</li>
+<li>Assignment Operators</li>
+<li>Misc Operators</li>
+</ul>
+<h2>The Arithmetic Operators</h2>
+Arithmetic operators are used in mathematical expressions in the same way that they are used in algebra. The following table lists the arithmetic operators 
+<table border="1px">
+<tbody><tr>
+<th>Operator</th>
+<th >Description</th>
+<th >Example</th>
+</tr>
+<tr>
+<td >+ (Addition)</td>
+<td >Adds values on either side of the operator.</td>
+<td >A + B will give 30</td>
+</tr>
+<tr>
+<td >- (Subtraction)</td>
+<td>Subtracts right-hand operand from left-hand operand.</td>
+<td >A - B will give -10</td>
+</tr>
+<tr>
+<td >* (Multiplication)</td>
+<td>Multiplies values on either side of the operator.</td>
+<td >A * B will give 200</td>
+</tr>
+<tr>
+<td >/ (Division)</td>
+<td>Divides left-hand operand by right-hand operand.</td>
+<td >B / A will give 2</td>
+</tr>
+<tr>
+<td >% (Modulus)</td>
+<td>Divides left-hand operand by right-hand operand and returns remainder.</td>
+<td >B % A will give 0</td>
+</tr>
+<tr>
+<td >++ (Increment)</td>
+<td>Increases the value of operand by 1.</td>
+<td >B++ gives 21</td>
+</tr>
+<tr>
+<td >-- (Decrement)</td>
+<td>Decreases the value of operand by 1.</td>
+<td >B-- gives 19</td>
+</tr>
+</tbody></table><br>
+
+<p>
+&nbsppublic class Test {<br>
+   &nbsp&nbsp&nbsp&nbsppublic static void main(String args[]) {<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspint a = 10;<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspint b = 20;<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspint c = 25;<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspint d = 25;<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("a + b = " + (a + b) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("a - b = " + (a - b) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("a * b = " + (a * b) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("b / a = " + (b / a) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("b % a = " + (b % a) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("c % a = " + (c % a) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("a++   = " +  (a++) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("b--   = " +  (a--) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp// Check the difference in d++ and ++d<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("d++   = " +  (d++) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("++d   = " +  (++d) );<br>
+   &nbsp&nbsp&nbsp&nbsp}<br>
+&nbsp}<br><br>
+&nbsp<b>Output :-</b><br>
+&nbspa + b = 30<br>
+&nbspa - b = -10<br>
+&nbspa * b = 200<br>
+&nbspb / a = 2<br>
+&nbspb % a = 0<br>
+&nbspc % a = 5<br>
+&nbspa++   = 10<br>
+&nbspb--   = 11<br>
+&nbspd++   = 25<br>
+&nbsp++d   = 27<br>
+</p>
+</div>
+
+<h2>The Relational Operators</h2>
+There are following relational operators supported by Java language.
+<table border="1px">
+<tbody><tr>
+<th >Operator</th>
+<th >Description</th>
+<th >Example</th>
+</tr>
+<tr>
+<td >== (equal to)</td>
+<td>Checks if the values of two operands are equal or not, if yes then condition becomes true.</td>
+<td >(A == B) is not true.</td>
+</tr>
+<tr>
+<td >!= (not equal to)</td>
+<td>Checks if the values of two operands are equal or not, if values are not equal then condition becomes true.</td>
+<td >(A != B) is true.</td>
+</tr>
+<tr>
+<td >&gt; (greater than)</td>
+<td>Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true.</td>
+<td >(A &gt; B) is not true.</td>
+</tr>
+<tr>
+<td >&lt; (less than)</td>
+<td>Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true.</td>
+<td >(A &lt; B) is true.</td>
+</tr>
+<tr>
+<td >&gt;= (greater than or equal to)</td>
+<td>Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true.</td>
+<td >(A &gt;= B) is not true.</td>
+</tr>
+<tr>
+<td >&lt;= (less than or equal to)</td>
+<td>Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.</td>
+<td >(A &lt;= B) is true.</td>
+</tr>
+</tbody></table><br>
+
+	<p>
+&nbsppublic class Test {<br>
+   &nbsp&nbsp&nbsp&nbsppublic static void main(String args[]) {<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspint a = 10;<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspint b = 20;<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("a == b = " + (a == b) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("a != b = " + (a != b) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("a > b = " + (a > b) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("a < b = " + (a < b) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("b >= a = " + (b >= a) );<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("b <= a = " + (b <= a) );<br>
+   &nbsp&nbsp&nbsp&nbsp}<br>
+&nbsp}<br><br>
+&nbsp<b>Output :-</b><br>
+&nbspa != b = true<br>
+&nbspa &gt; b = false<br>
+&nbspa &lt; b = true<br>
+&nbspb &gt;= a = true<br>
+&nbspb &lt;= a = false<br>
+</p>
+</div>
+<h2>The Logical Operators</h2>
+The following table lists the logical operators −
+<table border="1px">
+<tbody><tr>
+<th >Operator</th>
+<th >Description</th>
+<th >Example</th>
+</tr>
+<tr>
+<td >&amp;&amp; (logical and)</td>
+<td>Called Logical AND operator. If both the operands are non-zero, then the condition becomes true.</td>
+<td >(A &amp;&amp; B) is false</td>
+</tr>
+<tr>
+<td >|| (logical or)</td>
+<td>Called Logical OR Operator. If any of the two operands are non-zero, then the condition becomes true.</td>
+<td >(A || B) is true</td>
+</tr>
+<tr>
+<td >! (logical not)</td>
+<td>Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true then Logical NOT operator will make false.</td>
+<td >!(A &amp;&amp; B) is true</td>
+</tr>
+</tbody></table><br>
+
+</p>
+</body>
+</html>

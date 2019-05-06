@@ -1,0 +1,84 @@
+
+<html>
+<head>
+	
+</head>
+<body>
+<h1>Python Date and Time</h1>
+<p>
+There are two different date and time objects in Python. These are:
+<div class="card-body"><ul><li>naive</li><li>aware</li></ul></div>
+The differences between 'naive' and 'aware' objects are: <ol><li>The 'aware' object holds the details about time-zone and daylight saving information whereas naïve objects do not have that feature.</li><li>Naive objects are easy to understand and to work with.</li></ol><h2>Defining Tick</h2>As we all can make an idea that time intervals have to be represented in floating point number. The floating-point numbers in units of seconds are signified by Tick in python. Particular instants of time are represented in seconds since 12:00 am, 1<sup>st</sup> of January, of the year 1990. A popular module name 'time' is available which provides functions that let's programmer work with time and made conversion between time-representation possible. The pre-defined function time.time() is used to return the current time of the system. <span style="text-decoration: underline;"> <br>The daytime module exports the constants listed below:</span> <ul><li>MINYEAR</li><li>MAXYEAR</li></ul>
+<span style="text-decoration: underline;"> Two programs are shown showing the use of two different modules:</span>
+
+<h3>Example</h3>
+
+	<pre>
+	<br>&nbspimport time;
+&nbspticktock = time.time();
+
+&nbspprint("Number of ticks:", ticktock)
+&nbspNumber of ticks: 1465927104.951356
+</pre></div>
+<h3>Another program showing datetime module:</h3>
+
+	<pre>
+	<br>&nbspfrom datetime import datetime
+
+&nbsppresentime = datetime.now()
+
+&nbspprint(" NOW THE TIME IS:", presentime)
+
+&nbspprint("Todays Date is:", presentime.strftime('%Y-%m-%d') )
+
+&nbspprint("Year is:", presentime.year)
+
+&nbspprint("Month is:", presentime.month)
+
+&nbspprint("Day is:", presentime.day)
+
+&nbsp<b>Output :-</b>
+&nbspNOW THE TIME IS: 2016-06-14 18:01:25.831269
+&nbspTodays Date is: 2016-06-14
+&nbspYear is: 2016
+&nbspMOnth is: 6
+&nbspDay is: 14
+</pre></div>
+<h2>Timetuple In Python</h2>
+Python usually handles time's function as a tuple with nine numbers starting from zero (0) to eight (8).
+<table border="1"><tbody><tr><td >0</td><td >Four digit number (year)</td><td >2016</td></tr><tr><td >1</td><td >Months</td><td >1 - 12</td></tr><tr><td >2</td><td >Day</td><td >1 - 31</td></tr><tr><td >3</td><td >Hour</td><td >0 - 23</td></tr><tr><td >4</td><td >Minute</td><td >0 - 59</td></tr><tr><td >5</td><td >Second</td><td >0 - 60</td></tr><tr><td >6</td><td >Days of the week</td><td >0 - 6 (where Zero designates Monday)</td></tr><tr><td >7</td><td >Days of a year</td><td >1 - 366</td></tr><tr><td >8</td><td >Daylight saving</td><td >-1, 0, 1, -1</td></tr></tbody></table>
+<h2>Timedelta Object</h2>
+It is used to represent duration, i.e.  the difference between two dates and or times.  For invoking this, the syntax is:
+
+	<pre>
+	&nbspdatetime.timedelta([days, [,seconds [,microseconds [,milliseconds [, minutes [,hours [,weeks]]]]]])
+</pre></div>
+	<h2>Program To Get Current Time</h2>
+
+	<pre>
+&nbspimport time;
+
+&nbspcurtime = time.localtime(time.time())
+
+&nbspprint("Current Time is:", curtime)
+
+&nbsp<b>Output:- </b>
+&nbspCurrent Time is: time.struct_time(tm_year=2016, tm_mon=6, tm_mday=14, tm_hour=0, tm_min=4, tm_sec=49, tm_wday=1, tm_yday=166, tm_isdst=0)
+</pre></div>
+<h2>Calendar Of A Month</h2>
+<h3>Example</h3>
+
+	<pre>
+&nbspimport calendar
+
+&nbspcalndr = calendar.month(2016, 6)
+
+&nbspprint("The calendar for the month June of Year 2016 is:")
+
+&nbspprint (calndr)
+</pre></div>
+
+
+</p>
+</body>
+</html>

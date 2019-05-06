@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<h2>PHP 5 Data Types</h2>
+Variables can store data of different types, and different data types can do different things.
+
+PHP supports the following data types:
+<ul>
+  <li>String</li>
+  <li>Integer</li>
+  <li>Float (floating point numbers - also called double)</li>
+  <li>Boolean</li>
+  <li>Array</li>
+  <li>Object</li>
+  <li>NULL</li>
+  <li>Resource</li>
+</ul>
+<h3>PHP String</h3>
+A string is a sequence of characters, like "Hello world!".
+
+A string can be any text inside quotes. You can use single or double quotes:
+<h3>Example</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span style="color:black"><span style="color:red">&lt;?php</span> <br>$x = <span style="color:brown">"Hello world!"</span>;<br>$y = <span style="color:brown">'Hello world!'</span>;<br><br><span style="color:mediumblue">echo</span> $x;<br><span style="color:mediumblue">echo</span> <span style="color:brown">"&lt;br&gt;"</span>; <br><span style="color:mediumblue">echo</span> $y;<br><span style="color:red">?&gt;</span></span> </div>
+
+ <h3>PHP Integer</h3>
+An integer data type is a non-decimal number between -2,147,483,648 and 2,147,483,647.
+
+Rules for integers:
+<ul>
+  <li>An integer must have at least one digit</li>
+  <li>An integer must not have a decimal point</li>
+  <li>An integer can be either positive or negative</li>
+  <li>Integers can be specified in three formats: decimal (10-based), hexadecimal (16-based - prefixed with 0x) or octal (8-based - prefixed with 0)</li>
+</ul>
+In the following example $x is an integer. The PHP var_dump() function returns the data type and value:
+
+<h3>Example</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span style="color:black"><span style="color:red">&lt;?php</span> <br>$x = <span style="color:red">5985</span>;<br>var_dump($x);<br><span style="color:red">?&gt;</span></span> </div>
+
+ <h3>PHP Float</h3>
+A float (floating point number) is a number with a decimal point or a number in exponential form.
+
+In the following example $x is a float. The PHP var_dump() function returns the data type and value:
+
+<h3>Example</h3>
+<div class="w3-code htmlHigh notranslate">
+ <span style="color:black"><span style="color:red">&lt;?php</span> <br>$x = <span style="color:red">10.365</span>;<br>var_dump($x);<br><span style="color:red">?&gt;</span></span>  </div>
+ <h3>PHP Boolean</h3>
+A Boolean represents two possible states: TRUE or FALSE.
+<div class="w3-code htmlHigh w3-border notranslate">
+<div>
+ $x = true;<br>
+ $y = false;</div> </div>
+ 
+
+
+
+</body>
+</html>

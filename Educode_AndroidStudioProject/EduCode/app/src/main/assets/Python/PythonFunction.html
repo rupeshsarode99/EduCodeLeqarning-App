@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<h1>Python Functions</h1>
+<p>
+<p class="intro">A function is a block of code which only runs when it is called.</p>
+<p class="intro">You can pass data, known as parameters, into a function.</p>
+<p class="intro">A function can return data as a result.</p>
+
+<hr>
+<h2>Creating a Function</h2>
+
+<p>In Python a function is defined using the <span class="w3-codespan">def</span> 
+keyword:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+
+	<br>&nbspdef my_function():<br>&nbsp&nbsp; print(&quot;Hello from a function&quot;)</div>
+</div>
+<hr>
+<h2>Calling a Function</h2>
+
+<p>To call a function, use the function name followed by parenthesis:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+
+  <br>&nbspdef my_function():<br>&nbsp&nbsp; print(&quot;Hello from a function&quot;)<br><br>
+&nbsp  <strong>my_function()</strong></div>
+
+</div>
+
+<hr>
+<h2>Parameters</h2>
+
+<p>Information can be passed to functions as parameter.</p>
+<p>Parameters are specified after the function name, inside the parentheses.
+You can add as many parameters as you want, just separate them with a comma.</p>
+<p>
+The following example has a function with one parameter (fname).
+When the function is called, we pass along a first name,
+which is used inside the function to print the full name:
+</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+
+	<br>&nbspdef my_function(<strong>fname</strong>):<br>&nbsp&nbsp; print(fname + &quot; Refsnes&quot;)<br><br>
+  &nbspmy_function(<strong>&quot;&nbspEmail&quot;</strong>)<br>&nbspmy_function(<strong>&quot;Tobias&quot;</strong>)<br>&nbspmy_function(<strong>&quot;Linus&quot;</strong>)
+</div>
+
+</div>
+
+<hr>
+<h2>Default Parameter Value</h2>
+
+<p>The following example shows how to use a default parameter value.</p>
+<p>If we call the function without parameter, it uses the default value:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+
+<br>  &nbspdef my_function(<strong>country = &quot;Norway&quot;</strong>):<br>&nbsp&nbsp; &nbspprint(&quot;I am from &quot; + 
+  country)<br><br>
+  &nbspmy_function(&quot;Sweden&quot;)<br>&nbspmy_function(&quot;India&quot;)<br>&nbspmy_function()<br>&nbspmy_function(&quot;Brazil&quot;)</div>
+
+</div>
+
+<hr>
+<h2>Return Values</h2>
+
+<p>To let a function return a value, use the <code class="w3-codespan">return</code> 
+statement:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+
+  <br>&nbspdef my_function(x):<br>&nbsp&nbsp; <strong>return 5 * x<br></strong><br>&nbspprint(my_function(3))<br>&nbspprint(my_function(5))<br>
+  &nbspprint(my_function(9))</div>
+
+</div>
+
+
+</p>
+</body>
+</html>

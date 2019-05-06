@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<h1>JAVA Date and Time</h1>
+<p>
+	
+	Java provides the Date class available in java.util package, this class encapsulates the current date and time.
+
+The Date class supports two constructors as shown in the following table.
+<table border="1px">
+<tbody><tr>
+<th>Sr.No.</th>
+<th >Constructor &amp; Description</th>
+</tr>
+<tr>
+<td >1</td>
+<td><p><b>Date( )</b></p>
+<p>This constructor initializes the object with the current date and time.</p>
+</td>
+</tr>
+<tr>
+<td >2</td>
+<td><p><b>Date(long millisec)</b></p>
+<p>This constructor accepts an argument that equals the number of milliseconds that have elapsed since midnight, January 1, 1970.</p>
+</td>
+</tr>
+</tbody></table>
+Following are the methods of the date class.
+<table border="1px">
+<tbody><tr>
+<th>Sr.No.</th>
+<th >Method &amp; Description</th>
+</tr>
+<tr>
+<td >1</td>
+<td><p><b>boolean after(Date date)</b></p>
+<p>Returns true if the invoking Date object contains a date that is later than the one specified by date, otherwise, it returns false.</p>
+</td>
+</tr>
+<tr>
+<td >2</td>
+<td><p><b>boolean before(Date date)</b></p>
+<p>Returns true if the invoking Date object contains a date that is earlier than the one specified by date, otherwise, it returns false.</p>
+</td>
+</tr>
+<tr>
+<td >3</td>
+<td><p><b>Object clone( )</b></p>
+<p>Duplicates the invoking Date object.</p>
+</td>
+</tr>
+<tr>
+<td >4</td>
+<td><p><b>int compareTo(Date date)</b></p>
+<p>Compares the value of the invoking object with that of date. Returns 0 if the values are equal. Returns a negative value if the invoking object is earlier than date. Returns a positive value if the invoking object is later than date.</p>
+</td>
+</tr>
+<tr>
+<td >5</td>
+<td><p><b>int compareTo(Object obj)</b></p>
+<p>Operates identically to compareTo(Date) if obj is of class Date. Otherwise, it throws a ClassCastException.</p>
+</td>
+</tr>
+<tr>
+<td >6</td>
+<td><p><b>boolean equals(Object date)</b></p>
+<p>Returns true if the invoking Date object contains the same time and date as the one specified by date, otherwise, it returns false.</p>
+</td>
+</tr>
+<tr>
+<td >7</td>
+<td><p><b>long getTime( )</b></p>
+<p>Returns the number of milliseconds that have elapsed since January 1, 1970.</p>
+</td>
+</tr>
+<tr>
+<td >8</td>
+<td><p><b>int hashCode( )</b></p>
+<p>Returns a hash code for the invoking object.</p>
+</td>
+</tr>
+<tr>
+<td >9</td>
+<td><p><b>void setTime(long time)</b></p>
+<p>Sets the time and date as specified by time, which represents an elapsed time in milliseconds from midnight, January 1, 1970.</p>
+</td>
+</tr>
+<tr>
+<td >10</td>
+<td><p><b>String toString( )</b></p>
+<p>Converts the invoking Date object into a string and returns the result.</p>
+</td>
+</tr>
+</tbody></table>
+<h2>Getting Current Date and Time</h2>
+This is a very easy method to get current date and time in Java. You can use a simple Date object with toString() method to print the current date and time as follows −
+<h3>Example</h3>
+
+<pre>
+&nbspjava.util.Date;
+&nbsppublic class DateDemo {
+
+&nbsppublic static void main(String args[]) {
+&nbsp      // Instantiate a Date object
+     &nbsp Date date = new Date();
+
+&nbsp      // display time and date using toString()
+     &nbsp System.out.println(date.toString());
+   &nbsp}
+&nbsp}
+
+&nbsp<b>Output :-</b>
+&nbspon May 04 09:51:52 CDT 2009
+</pre>
+</div>
+<h2>Date Comparison</h2>
+Following are the three ways to compare two dates −
+<ul class="list">
+<li><p>You can use getTime( ) to obtain the number of milliseconds that have elapsed since midnight, January 1, 1970, for both objects and then compare these two values.</p></li>
+<li><p>You can use the methods before( ), after( ), and equals( ). Because the 12th of the month comes before the 18th, for example, new Date(99, 2, 12).before(new Date (99, 2, 18)) returns true.</p></li>
+<li><p>You can use the compareTo( ) method, which is defined by the Comparable interface and implemented by Date.</p></li>
+</ul>
+<h2>Date Formatting Using SimpleDateFormat</h2>
+SimpleDateFormat is a concrete class for formatting and parsing dates in a locale-sensitive manner. SimpleDateFormat allows you to start by choosing any user-defined patterns for date-time formatting.
+<h3>Example</h3>
+
+<pre>
+import java.util.*;
+import java.text.*;
+
+&nbsppublic class DateDemo {
+
+   &nbsppublic static void main(String args[]) {
+      &nbspDate dNow = new Date( );
+      &nbspSimpleDateFormat ft = 
+      &nbspnew SimpleDateFormat ("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+
+      &nbspSystem.out.println("Current Date: " + ft.format(dNow));
+   &nbsp}
+&nbsp}
+&nbsp<b>Output :-</b>
+&nbspCurrent Date: Sun 2004.07.18 at 04:14:09 PM PDT
+</pre></div>
+<h2>Simple DateFormat Format Codes</h2>
+To specify the time format, use a time pattern string. In this pattern, all ASCII letters are reserved as pattern letters, which are defined as the following −
+<table border="1px">
+<tbody><tr>
+<th >Character</th>
+<th >Description</th>
+<th >Example</th>
+</tr>
+<tr>
+<td>G</td>
+<td>Era designator</td>
+<td>AD</td>
+</tr>
+<tr>
+<td>y</td>
+<td>Year in four digits</td>
+<td>2001</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Month in year</td>
+<td>July or 07</td>
+</tr>
+<tr>
+<td>d</td>
+<td>Day in month</td>
+<td>10</td>
+</tr>
+<tr>
+<td>h</td>
+<td>Hour in A.M./P.M. (1~12)</td>
+<td>12</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Hour in day (0~23)</td>
+<td>22</td>
+</tr>
+<tr>
+<td>m</td>
+<td>Minute in hour</td>
+<td>30</td>
+</tr>
+<tr>
+<td>s</td>
+<td>Second in minute</td>
+<td>55</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Millisecond</td>
+<td>234</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Day in week</td>
+<td>Tuesday</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Day in year</td>
+<td>360</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Day of week in month</td>
+<td>2 (second Wed. in July)</td>
+</tr>
+<tr>
+<td>w</td>
+<td>Week in year</td>
+<td>40</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Week in month</td>
+<td>1</td>
+</tr>
+<tr>
+<td>a</td>
+<td>A.M./P.M. marker</td>
+<td>PM</td>
+</tr>
+<tr>
+<td>k</td>
+<td>Hour in day (1~24)</td>
+<td>24</td>
+</tr>
+<tr>
+<td>K</td>
+<td>Hour in A.M./P.M. (0~11)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>z</td>
+<td>Time zone</td>
+<td>Eastern Standard Time</td>
+</tr>
+<tr>
+<td>'</td>
+<td>Escape for text</td>
+<td>Delimiter</td>
+</tr>
+<tr>
+<td>"</td>
+<td>Single quote</td>
+<td>`</td>
+</tr>
+</tbody></table>
+</p>
+<br><br><br>
+</body>
+</html>

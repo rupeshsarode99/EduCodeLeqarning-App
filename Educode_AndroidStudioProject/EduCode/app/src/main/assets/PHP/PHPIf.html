@@ -1,0 +1,34 @@
+<h1>PHP 5&nbsp;if...else...elseif&nbsp;Statements</h1>
+<p>Conditional statements are used to perform different actions based on different conditions.</p>
+<h2>PHP Conditional Statements</h2>
+<p>Very often when you write code, you want to perform different actions for different conditions. You can use conditional statements in your code to do this.</p>
+<p>In PHP we have the following conditional statements:</p>
+<ul>
+<li>if&nbsp;statement - executes some code if one condition is true</li>
+<li>if...else&nbsp;statement - executes some code if a condition is true and another code if that condition is false</li>
+<li>if...elseif....else&nbsp;statement - executes different codes for more than two conditions</li>
+<li>switch&nbsp;statement - selects one of many blocks of code to be executed</li>
+</ul>
+<h2>PHP - The if Statement</h2>
+<p>The&nbsp;if&nbsp;statement executes some code if one condition is true.</p>
+<h3>Syntax</h3>
+<p>if (<em>condition</em>) {<em><br /> &nbsp;&nbsp;&nbsp; code to be executed if condition is true</em>;<br /> }</p>
+<p>The example below will output "Have a good day!" if the current time (HOUR) is less than 20:</p>
+<h3>Example</h3>
+<p>&lt;?php<br /> $t = date("H");<br /> <br /> if&nbsp;($t &lt;&nbsp;"20") {<br /> &nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;"Have a good day!";<br /> }<br /> ?&gt;</p>
+<h2>PHP - The if...else Statement</h2>
+<p>The&nbsp;if....else&nbsp;statement executes some code if a condition is true and another code if that condition is false.</p>
+<h3>Syntax</h3>
+<p>if (<em>condition</em>)&nbsp;{<br /> &nbsp; &nbsp;&nbsp;<em>code to be executed if condition is true;</em><br /> } else {<br /> &nbsp;&nbsp;<em>&nbsp; code to be executed if condition is false;<br /> </em>}</p>
+<p>The example below will output "Have a good day!" if the current time is less than 20, and "Have a good night!" otherwise:</p>
+<h3>Example</h3>
+<p>&lt;?php<br /> $t = date("H");<br /> <br /> if&nbsp;($t &lt;&nbsp;"20") {<br /> &nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;"Have a good day!";<br /> }&nbsp;else&nbsp;{<br /> &nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;"Have a good night!";<br /> }<br /> ?&gt;</p>
+<h2>PHP - The if...elseif....else Statement</h2>
+<p>The&nbsp;if....elseif...else&nbsp;statement executes different codes for more than two conditions.</p>
+<h3>Syntax</h3>
+<p>if (<em>condition</em>) {<br /> &nbsp; &nbsp;&nbsp;<em>code to be executed if this condition is true;<br /> </em>} elseif (<em>condition</em>) {<br /> &nbsp;&nbsp;<em>&nbsp; code to be executed if this condition is true;<br /> </em>} else {<br /> &nbsp; &nbsp;&nbsp;<em>code to be executed if all conditions are false;<br /> </em>}</p>
+<p>The example below will output "Have a good morning!" if the current time is less than 10, and "Have a good day!" if the current time is less than 20. Otherwise it will output "Have a good night!":</p>
+<h3>Example</h3>
+<p>&lt;?php<br /> $t = date("H");<br /> <br /> if&nbsp;($t &lt;&nbsp;"10") {<br /> &nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;"Have a good morning!";<br /> }&nbsp;elseif&nbsp;($t &lt;&nbsp;"20") {<br /> &nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;"Have a good day!";<br /> }&nbsp;else&nbsp;{<br /> &nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;"Have a good night!";<br /> }<br /> ?&gt;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

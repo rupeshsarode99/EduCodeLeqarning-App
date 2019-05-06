@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<p>
+
+<h2>Python Collections </h2>
+<p>There are four collection data types in the Python programming language:</p>
+<ul>
+<li><strong>List</strong> is a collection which is ordered and changeable. Allows duplicate members.</li>
+<li><strong>Tuple</strong> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+<li><strong>Set</strong> is a collection which is unordered and unindexed. No duplicate members.</li>
+<li><strong>Dictionary</strong> is a collection which is unordered, changeable and indexed. No duplicate members.</li>
+</ul>
+
+<p>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.</p>
+
+<h2>List</h2>
+<p>A list is a collection which is ordered and changeable. In Python lists are written with square brackets.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create a List:</p>
+
+	<pre>
+&nbspthislist = ["apple", "banana", "cherry"]<br>
+&nbspprint(thislist)
+</pre>
+</div>
+
+</div>
+
+<hr>
+<h2>Access Items</h2>
+
+<p>You access the list items by referring to the index number:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print the second item of the list:</p>
+<div class="w3-code notranslate pythonHigh">
+
+	<pre>
+&nbspthislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+&nbspprint(thislist[1])
+</pre>
+</div>
+
+</div>
+
+<h2>The list() Constructor</h2>
+
+<p>It is also possible to use the <span class="w3-codespan">list()</span> constructor to make a list.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Using the list() constructor to make a List:</p>
+
+	<pre>
+&nbspthislist = list(("apple", "banana", "cherry")) # note the double round-brackets<br>
+&nbspprint(thislist)
+</pre>
+</div>
+
+</div>
+
+<hr>
+
+<h2>List Methods</h2>
+<p>Python has a set of built-in methods that you can use on lists.</p>
+
+<table border="1">
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+<tr><td><a >append()</a></td><td>Adds an element at 
+  the end of the list</td></tr>
+<tr><td><a >clear()</a></td><td>Removes all the 
+  elements from the list</td></tr>
+<tr><td><a >copy()</a></td><td>Returns a copy of the 
+  list</td></tr>
+<tr><td><a >count()</a></td><td>Returns the number of 
+  elements with the specified value</td></tr>
+<tr><td><a >extend()</a></td><td>Add the elements of a 
+  list (or any iterable), to the end of the current list</td></tr>
+<tr><td><a >index()</a></td><td>Returns the index of 
+  the first element with the specified value</td></tr>
+<tr><td><a >insert()</a></td><td>Adds an element at 
+  the specified position</td></tr>
+<tr><td><a >pop()</a></td><td>Removes the element at the 
+  specified position</td></tr>
+<tr><td><a >remove()</a></td><td>Removes the  
+  item with the specified value</td></tr>
+<tr><td><a >reverse()</a></td><td>Reverses the order 
+  of the list</td></tr>
+<tr><td><a >sort()</a></td><td>Sorts the list</td></tr>
+</table>
+
+</div>
+<br>
+<h2>Tuple</h2>
+<p>A tuple is a collection which is ordered and <strong>unchangeable</strong>. In Python tuples are written with round brackets.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create a Tuple:</p>
+
+	<pre>
+&nbspthistuple = ("apple", "banana", "cherry")<br>
+&nbspprint(thistuple)
+</pre>
+</div>
+
+</div>
+
+<hr>
+<h2>Access Tuple Items</h2>
+<p>You can access tuple items by referring to the index number:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Return the item in position 1:</p>
+
+	<pre>
+&nbspthistuple = ("apple", "banana", "cherry")<br>
+&nbspprint(thistuple[1])
+</pre>
+</div>
+
+</div>
+
+<hr>
+<h2>Change Tuple Values</h2>
+
+<p>Once a tuple is created, you cannot change its values. Tuples are <strong>unchangeable</strong>.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>You cannot change values in a tuple:</p>
+
+	<pre>
+&nbspthistuple = ("apple", "banana", "cherry")<br>
+&nbspthistuple[1] = "blackcurrant"<br>&nbsp;# The values will remain the same:<br>&nbsp;print(thistuple)
+</pre>
+</div>
+
+</div>
+
+<hr>
+<h2>Loop Through a Tuple</h2>
+
+<p>You can loop through the tuple items by using a <code class="w3-codespan">for</code> loop.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Iterate through the items and print the values:</p>
+
+	<pre>
+  thistuple = ("apple", "banana", "cherry")<br>
+  for x in thistuple:<br>&nbsp;    print(x)</div>
+</pre>
+</div>
+
+<p>You will learn more about <code class="w3-codespan">for</code> loops in out <a href="python_for_loops.asp">Python For Loops</a> Chapter.</p>
+
+<hr>
+
+<h2>Tuple Length</h2>
+
+<p>To determine how many items a list have, use the <code class="w3-codespan">len()</code> method:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print the number of items in the tuple:</p>
+
+	<pre>
+&nbspthistuple = ("apple", "banana", "cherry")<br>
+&nbspprint(len(thistuple)</div>
+</pre>
+</div>
+
+<hr>
+
+<h2>Add Items</h2>
+
+<p>Once a tuple is created, you cannot add items to it. Tuples are <strong>unchangeable</strong>.</p>
+
+<hr>
+
+<h2>Remove Items</h2>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> You cannot remove items in a tuple.</p>
+</div>
+
+<p>&nbsp;Tuples are <strong>unchangeable</strong>, so you cannot remove items 
+from it, but you can delete the tuple completely:</p>
+
+<h2>The tuple() Constructor</h2>
+<p>It is also possible to use the <span class="w3-codespan">tuple()</span> constructor to make a tuple.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Using the tuple() method to make a tuple:</p>
+
+	<pre>
+&nbspthistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets<br>
+&nbspprint(thistuple)
+</pre>
+</div>
+
+</div>
+
+<hr>
+
+<h2>Tuple Methods</h2>
+
+<p>Python has two built-in methods that you can use on tuples.</p>
+
+<table border="1">
+<tr>
+<th >Method</th>
+<th>Description</th>
+</tr>
+<tr><td>count()</td><td>Returns the number of times a specified value occurs in a tuple</td></tr>
+<tr><td>index()</td><td>Searches the tuple for a specified value and returns the position of where it was found</td></tr>
+</table>
+<br><br>
+<h2>Set</h2>
+<p>A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create a Set:</p>
+
+	<pre>
+thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>print(thisset)</div>
+</pre>
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> Sets are unordered, so the items will appear in a random order.</p>
+</div>
+
+<hr>
+
+<h2>Access Items</h2>
+
+<p>You cannot access items in a set by referring to an index, since sets are 
+unordered the items has no index.</p>
+<p>But you can loop through the set items using a <code class="w3-codespan">for</code> 
+loop, or ask if a specified value is present in a set, by using the
+<code class="w3-codespan">in</code> keyword.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Loop through the set, and print the values:</p>
+
+	<pre>
+thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br><br>for x in thisset:<br>&nbsp; print(x)</div>
+</pre>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Check if &quot;banana&quot; is present in the set:</p>
+
+	<pre>
+thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br><br>print(&quot;banana&quot; in thisset)</div>
+</pre>
+</div>
+
+<hr>
+
+<h2>Change Items</h2>
+
+<p>Once a set is created, you cannot change its items, but you can add new items.</p>
+<hr>
+
+<h2>Add Items</h2>
+
+<p>To add one item to a set use the <code class="w3-codespan">add()</code> 
+method.</p>
+<p>To add more than one item to a set use the <code class="w3-codespan">update()</code> 
+method.</p>
+
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add an item to a set, using the <code class="w3-codespan">add()</code> 
+method:</p>
+
+	<pre>
+thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>
+thisset.add(&quot;orange&quot;)<br>print(thisset)</div>
+</pre>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add multiple items to a set, using the <code class="w3-codespan">update()</code> 
+method:</p>
+
+	<pre>
+thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>thisset.update([&quot;orange&quot;, &quot;mango&quot;, &quot;grapes&quot;])<br>print(thisset)</div>
+</pre>
+</div>
+
+<hr>
+
+<h2>Get the Length of a Set</h2>
+
+<p>To determine how many items a set have, use the <code class="w3-codespan">len()</code> method.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Get the number of items in a set:</p>
+
+	<pre>
+thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>
+print(len(thisset))</div>
+</pre>
+</div>
+
+<hr>
+
+<h2>Remove Item</h2>
+
+<p>To remove an item in a set, use the <code class="w3-codespan">remove()</code>, or the <code class="w3-codespan">discard()</code> method.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Remove &quot;banana&quot; by using the <code class="w3-codespan">remove()</code> 
+method:</p>
+
+	<pre>
+thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>
+thisset.remove(&quot;banana&quot;)<br>
+print(thisset)</div>
+</pre>
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> If the item to remove does not exist, <code class="w3-codespan">remove()</code> will raise an error.</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Remove &quot;banana&quot; by using the <code class="w3-codespan">discard()</code> 
+method:</p>
+
+	<pre>
+thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>
+thisset.discard(&quot;banana&quot;)<br>
+print(thisset)</div>
+</pre>
+</div>
+
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> If the item to remove does not exist, <code class="w3-codespan">discard()</code> will 
+  <strong>NOT</strong> raise an error.</p>
+</div>
+
+<p>You can also use the <code class="w3-codespan">pop()</code>, method to remove 
+an item, but this method will remove the <em>last</em> item. Remember that sets 
+are unordered, so you will not know what item that gets removed.</p>
+<p>The return value of the <code class="w3-codespan">pop()</code> method is the 
+removed item.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Remove the last item by using the <code class="w3-codespan">pop()</code> 
+method:</p>
+
+	<pre>
+thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>
+x = thisset.pop()<br>print(x)<br>
+print(thisset)</div>
+</pre>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>The <code class="w3-codespan">clear()</code> 
+method empties the set:</p>
+
+	<pre>
+thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>
+thisset.clear()<br>
+print(thisset)</div>
+</pre>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>The <code class="w3-codespan">del</code> keyword will delete the set 
+completely:</p>
+
+	<pre>
+thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>
+del thisset<br>
+print(thisset)</div>
+</pre>
+</div>
+
+<hr>
+<h2>The set() Constructor</h2>
+<p>It is also possible to use the <span class="w3-codespan">set()</span> 
+constructor to make a set.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Using the set() constructor to make a set:</p>
+
+	<pre>
+thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
+
+print(thisset)
+</pre>
+</div>
+</div>
+</p>
+</body>
+</html>

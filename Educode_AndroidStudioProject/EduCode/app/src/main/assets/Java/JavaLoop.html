@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<h1>JAVA Loops</h1>
+<p>
+	<h2>While Loop</h2>
+	A while loop statement in Java programming language repeatedly executes a target statement as long as a given condition is true.
+<h3>Syntax</h3>
+The syntax of a while loop is −
+
+<p>
+&nbsp	while(Boolean_expression) {<br>
+   &nbsp&nbsp&nbsp&nbsp// Statements<br>
+&nbsp}<br>
+</p>
+</div>
+Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is any non zero value.
+When executing, if the boolean_expression result is true, then the actions inside the loop will be executed. This will continue as long as the expression result is true.
+When the condition becomes false, program control passes to the line immediately following the loop.
+Here, key point of the while loop is that the loop might not ever run. When the expression is tested and the result is false, the loop body will be skipped and the first statement after the while loop will be executed.
+<h3>Example</h3>
+
+<pre>
+&nbsppublic class Test {
+
+   &nbsppublic static void main(String args[]) {
+      &nbspint x = 10;
+
+      &nbspwhile( x < 20 ) {
+         &nbspSystem.out.print("value of x : " + x );
+         &nbspx++;
+         &nbspSystem.out.print("\n");
+      &nbsp}
+   &nbsp}
+&nbsp}
+
+&nbsp<b>Output :-</b>
+&nbspvalue of x : 10
+&nbspvalue of x : 11
+&nbspvalue of x : 12
+&nbspvalue of x : 13
+&nbspvalue of x : 14
+&nbspvalue of x : 15
+&nbspvalue of x : 16
+&nbspvalue of x : 17
+&nbspvalue of x : 18
+&nbspvalue of x : 19
+</pre>
+</div>
+<h2>For Loop</h2>
+A for loop is a repetition control structure that allows you to efficiently write a loop that needs to be executed a specific number of times.
+
+A for loop is useful when you know how many times a task is to be repeated.
+
+Syntax
+The syntax of a for loop is −
+
+<pre>
+&nbspfor(initialization; Boolean_expression; update) {
+&nbsp   // Statements
+&nbsp}		
+</pre>
+</div>
+Here is the flow of control in a for loop −
+<ul class="list">
+<li><p>The <b>initialization</b> step is executed first, and only once. This step allows you to declare and initialize any loop control variables and this step ends with a semi colon (;).</p></li>
+<li><p>Next, the <b>Boolean expression</b> is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop will not be executed and control jumps to the next statement past the for loop.</p></li>
+<li><p>After the <b>body</b> of the for loop gets executed, the control jumps back up to the update statement. This statement allows you to update any loop control variables. This statement can be left blank with a semicolon at the end.</p></li>
+<li><p>The Boolean expression is now evaluated again. If it is true, the loop executes and the process repeats (body of loop, then update step, then Boolean expression). After the Boolean expression is false, the for loop terminates.</p></li>
+</ul>
+Example
+Following is an example code of the for loop in Java.
+
+<pre> 
+&nbsppublic class Test {
+
+&nbsp   public static void main(String args[]) {
+
+     &nbsp for(int x = 10; x < 20; x = x + 1) {
+         &nbspSystem.out.print("value of x : " + x );
+         &nbspSystem.out.print("\n");
+      &nbsp}
+   &nbsp}
+&nbsp}
+
+&nbsp<b>Output :-</b>
+&nbspvalue of x : 10
+&nbspvalue of x : 11
+&nbspvalue of x : 12
+&nbspvalue of x : 13
+&nbspvalue of x : 14
+&nbspvalue of x : 15
+&nbspvalue of x : 16
+&nbspvalue of x : 17
+&nbspvalue of x : 18
+&nbspvalue of x : 19
+</pre>
+</div>
+<h2>do...while</h2>
+A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.
+<h3>Syntax</h3>
+
+Following is the syntax of a do...while loop −
+
+<pre> 
+&nbspdo {
+   &nbsp// Statements
+&nbsp}while(Boolean_expression);
+</pre></div>
+Notice that the Boolean expression appears at the end of the loop, so the statements in the loop execute once before the Boolean is tested.
+
+If the Boolean expression is true, the control jumps back up to do statement, and the statements in the loop execute again. This process repeats until the Boolean expression is false.
+<h3>Example</h3>
+
+<pre> 
+&nbsppublic class Test {
+
+&nbsp   public static void main(String args[]) {
+     &nbsp int x = 10;
+
+      &nbspdo {
+         &nbspSystem.out.print("value of x : " + x );
+         &nbspx++;
+         &nbspSystem.out.print("\n");
+      &nbsp}while( x < 20 );
+   &nbsp}
+&nbsp}
+
+&nbsp<b>Output :-</b>
+&nbspvalue of x : 10
+&nbspvalue of x : 11
+&nbspvalue of x : 12
+&nbspvalue of x : 13
+&nbspvalue of x : 14
+&nbspvalue of x : 15
+&nbspvalue of x : 16
+&nbspvalue of x : 17
+&nbspvalue of x : 18
+&nbspvalue of x : 19
+</pre></div>
+</p>
+<br><br>
+</body>
+</html>

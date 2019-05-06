@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<h1>JAVA Functions</h1>
+<p>
+A Java method is a collection of statements that are grouped together to perform an operation. When you call the System.out.println() method, for example, the system actually executes several statements in order to display a message on the console.
+
+Now you will learn how to create your own methods with or without return values, invoke a method with or without parameters, and apply method abstraction in the program design.
+<h2>Creating Method</h2>
+Considering the following example to explain the syntax of a method −
+<h3>Syntax</h3>
+
+<pre>
+&nbsppublic static int methodName(int a, int b) {
+&nbsp   // body
+&nbsp}
+</pre></div>
+Here,
+<ul class="list">
+<li><p><b>public static</b> − modifier</p></li>
+<li><p><b>int</b> − return type</p></li>
+<li><p><b>methodName</b> − name of the method</p></li>
+<li><p><b>a, b</b> − formal parameters</p></li>
+<li><p><b>int a, int b</b> − list of parameters</p></li>
+</ul>
+Method definition consists of a method header and a method body. The same is shown in the following syntax −
+<h3>Syntax</h3>
+
+<pre>
+&nbspmodifier returnType nameOfMethod (Parameter List) {
+   &nbsp// method body
+&nbsp}
+</pre></div>
+The syntax shown above includes −
+<ul class="list">
+<li><p><b>modifier</b> − It defines the access type of the method and it is optional to use.</p></li>
+<li><p><b>returnType</b> − Method may return a value.</p></li>
+<li><p><b>nameOfMethod</b> − This is the method name. The method signature consists of the method name and the parameter list.</p></li>
+<li><p><b>Parameter List</b> − The list of parameters, it is the type, order, and number of parameters of a method. These are optional, method may contain zero parameters.</p></li>
+<li><p><b>method body</b> − The method body defines what the method does with the statements.</p></li>
+</ul>
+<h3>Example</h3>
+Here is the source code of the above defined method called min(). This method takes two parameters num1 and num2 and returns the maximum between the two −
+
+<pre>
+&nbsp/** the snippet returns the minimum between two numbers */
+
+&nbsppublic static int minFunction(int n1, int n2) {
+   &nbspint min;
+   &nbspif (n1 > n2)
+      &nbspmin = n2;
+   &nbspelse
+      &nbspmin = n1;
+
+   &nbspreturn min; 
+&nbsp}
+</pre></div>
+<h2>Method Calling</h2>
+For using a method, it should be called. There are two ways in which a method is called i.e., method returns a value or returning nothing (no return value).
+
+The process of method calling is simple. When a program invokes a method, the program control gets transferred to the called method. This called method then returns control to the caller in two conditions, when −
+<ul class="list">
+<li>the return statement is executed.</li>
+<li>it reaches the method ending closing brace.</li>
+</ul>
+The methods returning void is considered as call to a statement. Lets consider an example −
+
+<pre>
+&nbspSystem.out.println("This is tutorialspoint.com!");
+</pre></div>
+The method returning value can be understood by the following example −
+
+<pre>
+&nbspint result = sum(6, 9);
+</pre></div>
+Following is the example to demonstrate how to define a method and how to call it −
+<h3>Example</h3>
+
+<pre>
+&nbsppublic class ExampleMinNumber {
+   
+   &nbsppublic static void main(String[] args) {
+      &nbspint a = 11;
+      &nbspint b = 6;
+      &nbspint c = minFunction(a, b);
+      &nbspSystem.out.println("Minimum Value = " + c);
+   &nbsp}
+
+   &nbsp/** returns the minimum of two numbers */
+   &nbsppublic static int minFunction(int n1, int n2) {
+      &nbspint min;
+      &nbspif (n1 > n2)
+         &nbspmin = n2;
+     &nbsp else
+&nbsp         min = n1;
+
+      &nbspreturn min; 
+   &nbsp}
+&nbsp}
+
+&nbsp<b>Output :-</b>
+
+&nbspMinimum value = 6
+</pre></div>
+<h3>The void Keyword</h3>
+The void keyword allows us to create methods which do not return a value. Here, in the following example we're considering a void method methodRankPoints. This method is a void method, which does not return any value. Call to a void method must be a statement i.e. methodRankPoints(255.7);. It is a Java statement which ends with a semicolon as shown in the following example.
+<h3>Example</h3>
+
+<pre>
+&nbsppublic class ExampleVoid {
+
+&nbsp   public static void main(String[] args) {
+     &nbsp methodRankPoints(255.7);
+   &nbsp}
+
+   &nbsppublic static void methodRankPoints(double points) {
+      &nbspif (points >= 202.5) {
+         &nbspSystem.out.println("Rank:A1");
+      &nbsp}else if (points >= 122.4) {
+         &nbspSystem.out.println("Rank:A2");
+      &nbsp}else {
+         &nbspSystem.out.println("Rank:A3");
+      &nbsp}
+   &nbsp}
+&nbsp}
+
+&nbsp<b>Output :-</b>
+&nbspRank:A1
+</pre></div>
+<h2>The Constructors</h2>
+A constructor initializes an object when it is created. It has the same name as its class and is syntactically similar to a method. However, constructors have no explicit return type.
+
+Typically, you will use a constructor to give initial values to the instance variables defined by the class, or to perform any other startup procedures required to create a fully formed object.
+
+All classes have constructors, whether you define one or not, because Java automatically provides a default constructor that initializes all member variables to zero. However, once you define your own constructor, the default constructor is no longer used.
+<h3>Example</h3>
+Here is a simple example that uses a constructor without parameters −
+
+<pre>
+&nbsp// A simple constructor.
+&nbspclass MyClass {
+   &nbspint x;
+
+   &nbsp// Following is the constructor
+   &nbspMyClass() {
+      &nbspx = 10;
+   &nbsp}
+&nbsp}
+You will have to call constructor to initialize objects as follows −
+
+&nbsppublic class ConsDemo {
+
+   &nbsppublic static void main(String args[]) {
+      &nbspMyClass t1 = new MyClass();
+      &nbspMyClass t2 = new MyClass();
+      &nbspSystem.out.println(t1.x + " " + t2.x);
+   &nbsp}
+&nbsp}
+
+&nbsp<b>Output :-</b>
+&nbsp10 10
+</pre></div>
+Parameterized Constructor
+Most often, you will need a constructor that accepts one or more parameters. Parameters are added to a constructor in the same way that they are added to a method, just declare them inside the parentheses after the constructor's name.
+<h3>Example</h3>
+Here is a simple example that uses a constructor with a parameter −
+
+<pre>
+&nbsp// A simple constructor.
+&nbspclass MyClass {
+   &nbspint x;
+   
+   &nbsp// Following is the constructor
+   &nbspMyClass(int i ) {
+      &nbspx = i;
+   &nbsp}
+&nbsp}
+
+&nbsppublic class ConsDemo {
+
+   &nbsppublic static void main(String args[]) {
+      &nbspMyClass t1 = new MyClass( 10 );
+      &nbspMyClass t2 = new MyClass( 20 );
+      &nbspSystem.out.println(t1.x + " " + t2.x);
+   &nbsp}
+&nbsp}
+&nbspThis will produce the following result −
+
+&nbsp<b>Output :-</b>
+
+&nbsp10 20
+</pre></div>
+</p>
+</body>
+</html>

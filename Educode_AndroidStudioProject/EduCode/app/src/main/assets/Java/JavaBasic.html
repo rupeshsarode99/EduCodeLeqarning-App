@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<p><h2>Java Basic Syntax</h2>
+When we consider a Java program, it can be defined as a collection of objects that communicate via invoking each other's methods. Let us now briefly look into what do class, object, methods, and instance variables mean.
+	<ul class="list">
+<li><p><b>Object</b> − Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behavior such as wagging their tail, barking, eating. An object is an instance of a class.</p></li>
+<li><p><b>Class</b> − A class can be defined as a template/blueprint that describes the behavior/state that the object of its type supports.</p></li>
+<li><p><b>Methods</b> − A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.</p></li>
+<li><p><b>Instance Variables</b> − Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.</p></li>
+</ul>
+<h2>First Java Program</h2>
+Let us look at a simple code that will print the words Hello World.
+<h3>Example</h3>
+
+<p>
+    &nbspclass MyFirstJavaProgram {<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp/* This is my first java program.<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp* This will print 'Hello World' as the output<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp*/<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsppublic static void main(String args[])<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp{<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("Hello World");<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp}<br>
+    &nbsp}
+</p>
+</div>
+Let's look at how to save the file, compile, and run the program. Please follow the subsequent steps −
+<ul class="list">
+<li><p>Open notepad and add the code as above.</p></li>
+<li><p>Save the file as: MyFirstJavaProgram.java.</p></li>
+<li><p>Open a command prompt window and go to the directory where you saved the 	class. Assume it's C:\.</p></li>
+<li><p>Type 'javac MyFirstJavaProgram.java' and press enter to compile your code. If there are no errors in your code, the command prompt will take you to the next line (Assumption : The path variable is set).</p></li>
+<li><p>Now, type ' java MyFirstJavaProgram ' to run your program.</p></li>	
+<li><p>You will be able to see ' Hello World ' printed on the window.</p></li>
+</ul>
+<h3>Output</h3>
+
+<pre>&nbspC:\&gt; javac MyFirstJavaProgram.java
+&nbspC:\&gt; java MyFirstJavaProgram 
+&nbspHello World
+</pre>
+</div>
+<h2>Basic Syntax</h2>
+About Java programs, it is very important to keep in mind the following points.
+	<ul class="list">
+<li><p><b>Case Sensitivity</b> − Java is case sensitive, which means identifier <b>Hello</b> and <b>hello</b> would have different meaning in Java.</p></li>
+<li><p><b>Class Names</b> − For all class names the first letter should be in Upper Case. If several words are used to form a name of the class, each inner word's first letter should be in Upper Case.</p>
+<p><b>Example:</b> <i>class MyFirstJavaClass</i></p></li>
+<li><p><b>Method Names</b> − All method names should start with a Lower Case letter. If several words are  used to form the name of the method, then each inner word's first letter should be in Upper Case.</p>
+<p><b>Example:</b> <i>public void myMethodName()</i></p></li>
+<li><p><b>Program File Name</b> − Name of the program file should exactly match the class name.</p>
+<p>When saving the file, you should save it using the class name (Remember Java is case sensitive) and append '.java' to the end of the name (if the file name and the class name do not match, your program will not compile).</p>
+<p><b>Example:</b> Assume 'MyFirstJavaProgram' is the class name. Then the file should be saved as <i>'MyFirstJavaProgram.java'</i></p></li>
+<li><p><b>public static void main(String args[])</b> − Java program processing starts from the main() method which is a mandatory part of every Java program.</p></li>
+</ul>
+<h2>Comments in Java</h2>
+Java supports single-line and multi-line comments very similar to C and C++. All characters available inside any comment are ignored by Java compiler.
+<h3>Example</h3>
+
+<p>
+    &nbspclass MyFirstJavaProgram {<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp/* This is my first java program.<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp* This will print 'Hello World' as the output<br>
+	&nbsp&nbsp&nbsp&nbsp&nbsp* This is an example of multi-line comments.<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp*/<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsppublic static void main(String args[])<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp{<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp // This is an example of single line comment<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp /* This is also an example of single line comment. */<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("Hello World");<br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp}<br>
+    &nbsp}<br>
+    &nbsp<b>Output:-</b><br>
+    &nbspHello Java
+</p>
+</div>
+
+	</p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+<body>
+<h1>Java Variable</h1>
+<p>
+
+A variable provides us with named storage that our programs can manipulate. Each variable in Java has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.
+<br>
+You must declare all variables before they can be used. Following is the basic form of a variable declaration −
+<br>
+data type variable [ = value][, variable [ = value] ...] ;
+Here data type is one of Java's datatypes and variable is the name of the variable. To declare more than one variable of the specified type, you can use a comma-separated list.
+<br>
+Following are valid examples of variable declaration and initialization in Java −
+<h3>Example</h3>
+
+<p>
+&nbspint a, b, c;         // Declares three ints, a, b, and c.<br>
+&nbspint a = 10, b = 10;  // Example of initialization<br>
+&nbspbyte B = 22;         // initializes a byte type variable B.<br>
+&nbspdouble pi = 3.14159; // declares and assigns a value of PI.<br>
+&nbspchar a = 'a';        // the char variable a iis initialized with value 'a'
+</p>
+</div>
+This chapter will explain various variable types available in Java Language. There are three kinds of variables in Java −
+<ul class="list">
+<li>Local variables</li>
+<li>Instance variables</li>
+<li>Class/Static variables</li>
+</ul>
+<h2>Local Variables</h2>
+<ul class="list">
+<li><p>Local variables are declared in methods, constructors, or blocks.</p></li>
+<li><p>Local variables are created when the method, constructor or block is entered and the variable will be destroyed once it exits the method, constructor, or block.</p></li>
+<li><p>Access modifiers cannot be used for local variables.</p></li>
+<li><p>Local variables are visible only within the declared method, constructor, or block.</p></li>
+<li><p>Local variables are implemented at stack level internally.</p></li>
+<li><p>There is no default value for local variables, so local variables should be declared and an initial value should be assigned before the first use.</p></li>
+</ul>
+<h3>Example</h3>
+Here, age is a local variable. This is defined inside pupAge() method and its scope is limited to only this method.
+
+<p>
+&nbsppublic class Test {<br>
+   &nbsp&nbsp&nbsp&nbsppublic void pupAge() {<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbspint age = 0;<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbspage = age + 7;<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("Puppy age is : " + age);<br>
+   &nbsp&nbsp&nbsp&nbsp}<br>
+
+   &nbsp&nbsp&nbsp&nbsppublic static void main(String args[]) {<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbspTest test = new Test();<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsptest.pupAge();<br>
+   &nbsp&nbsp&nbsp&nbsp}<br>
+&nbsp}<br>
+&nbsp<b>Output:-</b>  <br>
+&nbspPuppy age is: 7
+</p>
+</div>
+<h3>Example</h3>
+Following example uses age without initializing it, so it would give an error at the time of compilation.
+
+<p>
+&nbsppublic class Test {<br>
+   &nbsp&nbsp&nbsp&nbsppublic void pupAge() {<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbspint age;<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbspage = age + 7;<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbspSystem.out.println("Puppy age is : " + age);<br>
+   &nbsp&nbsp&nbsp&nbsp}<br>
+
+   &nbsp&nbsp&nbsp&nbsppublic static void main(String args[]) {<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbspTest test = new Test();<br>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsptest.pupAge();<br>
+   &nbsp&nbsp&nbsp&nbsp}<br>
+&nbsp}<br>
+&nbsp<b>Output:-</b>
+<pre>
+&nbspTest.java:4:variable number might not have been initialized
+&nbspage = age + 7;
+         ^
+&nbsp1 error
+</pre>
+</p>
+</div>
+
+</p>
+</body>
+</html>

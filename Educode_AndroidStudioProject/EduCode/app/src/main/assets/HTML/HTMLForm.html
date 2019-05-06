@@ -1,0 +1,130 @@
+<h1><u>HTML&nbsp;</u>Forms</h1>
+<h3>HTML Form Example</h3>
+<p>First name:<br /> <br /> Last name:<br /> &nbsp;</p>
+<p>&nbsp;</p>
+<h2>The &lt;form&gt; Element</h2>
+<p>The HTML&nbsp;&lt;form&gt;&nbsp;element defines a form that is used to collect user input:</p>
+<p>&lt;form&gt;<br /> .<br /> <em>form elements</em><br /> .<br /> &lt;/form&gt;</p>
+<p>An HTML form contains&nbsp;<strong>form elements</strong>.</p>
+<p>Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.</p>
+<h2>The &lt;input&gt; Element</h2>
+<p>The&nbsp;&lt;input&gt;&nbsp;element is the most important form element.</p>
+<p>The&nbsp;&lt;input&gt;&nbsp;element can be displayed in several ways, depending on the&nbsp;<strong>type</strong>&nbsp;attribute.</p>
+<p>Here are some examples:</p>
+<table width="1103">
+<tbody>
+<tr>
+<td>
+<p><strong>Type</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&lt;input type="text"&gt;</p>
+</td>
+<td>
+<p>Defines a one-line text input field</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&lt;input type="radio"&gt;</p>
+</td>
+<td>
+<p>Defines a radio button (for selecting one of many choices)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&lt;input type="submit"&gt;</p>
+</td>
+<td>
+<p>Defines a submit button (for submitting the form)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>You will learn a lot more about input types later in this tutorial.</p>
+<h2>Text Input</h2>
+<p>&lt;input type="text"&gt;&nbsp;defines a one-line input field for&nbsp;<strong>text input</strong>:</p>
+<h3>Example</h3>
+<p>&lt;form&gt;<br /> &nbsp; First name:&lt;br&gt;<br /> &nbsp;&nbsp;&lt;input&nbsp;type="text"&nbsp;name="firstname"&gt;&lt;br&gt;<br /> &nbsp; Last name:&lt;br&gt;<br /> &nbsp;&nbsp;&lt;input&nbsp;type="text"&nbsp;name="lastname"&gt;<br /> &lt;/form&gt;</p>
+<p>&nbsp;</p>
+<p>This is how it will look like in a browser:</p>
+<p>First name:<br /> <br /> Last name:</p>
+<p><strong>Note:</strong>&nbsp;The form itself is not visible. Also note that the default width of a text field is 20 characters.</p>
+<h2>Radio Button Input</h2>
+<p>&lt;input type="radio"&gt;&nbsp;defines a&nbsp;<strong>radio button</strong>.</p>
+<p>Radio buttons let a user select ONE of a limited number of choices:</p>
+<h3>Example</h3>
+<p>&lt;form&gt;<br /> &nbsp;&nbsp;&lt;input&nbsp;type="radio"&nbsp;name="gender"&nbsp;value="male"&nbsp;checked&gt;&nbsp;Male&lt;br&gt;<br /> &nbsp;&nbsp;&lt;input&nbsp;type="radio"&nbsp;name="gender"&nbsp;value="female"&gt;&nbsp;Female&lt;br&gt;<br /> &nbsp;&nbsp;&lt;input&nbsp;type="radio"&nbsp;name="gender"&nbsp;value="other"&gt;&nbsp;Other<br /> &lt;/form&gt;</p>
+<p>&nbsp;</p>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<p>&nbsp;Male<br /> &nbsp;Female<br /> &nbsp;Other</p>
+<h2>The Submit Button</h2>
+<p>&lt;input type="submit"&gt;&nbsp;defines a button for&nbsp;<strong>submitting</strong>&nbsp;the form data to a&nbsp;<strong>form-handler</strong>.</p>
+<p>The form-handler is typically a server page with a script for processing input data.</p>
+<p>The form-handler is specified in the form's&nbsp;<strong>action</strong>&nbsp;attribute:</p>
+<h3>Example</h3>
+<p>&lt;form&nbsp;action="/action_page.php"&gt;<br /> &nbsp; First name:&lt;br&gt;<br /> &nbsp;&nbsp;&lt;input&nbsp;type="text"&nbsp;name="firstname"&nbsp;value="Mickey"&gt;&lt;br&gt;<br /> &nbsp; Last name:&lt;br&gt;<br /> &nbsp;&nbsp;&lt;input&nbsp;type="text"&nbsp;name="lastname"&nbsp;value="Mouse"&gt;&lt;br&gt;&lt;br&gt;<br /> &nbsp;&nbsp;&lt;input&nbsp;type="submit"&nbsp;value="Submit"&gt;<br /> &lt;/form&gt;</p>
+<p>&nbsp;</p>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<p>First name:<br /> &nbsp;<br /> Last name:<br /> &nbsp;</p>
+<h2>The Action Attribute</h2>
+<p>The&nbsp;action&nbsp;attribute defines the action to be performed when the form is submitted.</p>
+<p>Normally, the form data is sent to a web page on the server when the user clicks on the submit button.</p>
+<p>In the example above, the form data is sent to a page on the server called "/action_page.php". This page contains a server-side script that handles the form data:</p>
+<p>&lt;form&nbsp;<strong>action</strong><strong>="/action_page.php</strong>"&gt;</p>
+<p>If the&nbsp;action&nbsp;attribute is omitted, the action is set to the current page.</p>
+<h2>The Target Attribute</h2>
+<p>The&nbsp;target&nbsp;attribute specifies if the submitted result will open in a new browser tab, a frame, or in the current window.</p>
+<p>The default value is "_self" which means the form will be submitted in the current window.</p>
+<p>To make the form result open in a new browser tab, use the value "_blank":</p>
+<h3>Example</h3>
+<p>&lt;form&nbsp;action="/action_page.php"&nbsp;<strong>target</strong><strong>="_blank"</strong>&gt;</p>
+<p>Other legal values are "_parent", "_top", or a name representing the name of an iframe.</p>
+<h2>The Method Attribute</h2>
+<p>The&nbsp;method&nbsp;attribute specifies the HTTP method (<strong>GET&nbsp;</strong>or&nbsp;<strong>POST</strong>) to be used when submitting the form data:</p>
+<h3>Example</h3>
+<p>&lt;form&nbsp;action="/action_page.php"&nbsp;<strong>method</strong><strong>="get"</strong>&gt;</p>
+<p>&nbsp;</p>
+<p>or:</p>
+<h3>Example</h3>
+<p>&lt;form&nbsp;action="/action_page.php"&nbsp;<strong>method</strong><strong>="post"</strong>&gt;</p>
+<p>&nbsp;</p>
+<h2>When to Use GET?</h2>
+<p>The default method when submitting form data is GET.</p>
+<p>However, when GET is used, the submitted form data will be&nbsp;<strong>visible in the page address field</strong>:</p>
+<p>/action_page.php?firstname=Mickey&amp;lastname=Mouse</p>
+<p><strong>Notes on GET:</strong></p>
+<ul>
+<li>Appends form-data into the URL in name/value pairs</li>
+<li>The length of a URL is limited (about 3000 characters)</li>
+<li>Never use GET to send sensitive data! (will be visible in the URL)</li>
+<li>Useful for form submissions where a user wants to bookmark the result</li>
+<li>GET is better for non-secure data, like query strings in Google</li>
+</ul>
+<h2>When to Use POST?</h2>
+<p>Always use POST if the form data contains sensitive or personal information. The POST method does not display the submitted form data in the page address field.</p>
+<p><strong>Notes on POST:</strong></p>
+<ul>
+<li>POST has no size limitations, and can be used to send large amounts of data.</li>
+<li>Form submissions with POST cannot be bookmarked</li>
+</ul>
+<h2>The Name Attribute</h2>
+<p>Each input field must have a&nbsp;name&nbsp;attribute to be submitted.</p>
+<p>If the&nbsp;name&nbsp;attribute is omitted, the data of that input field will not be sent at all.</p>
+<p>This example will only submit the "Last name" input field:</p>
+<h3>Example</h3>
+<p>&lt;form&nbsp;action="/action_page.php"&gt;<br /> &nbsp; First name:&lt;br&gt;<br /> &nbsp;&nbsp;&lt;input&nbsp;type="text"&nbsp;value="Mickey"&gt;&lt;br&gt;<br /> &nbsp; Last name:&lt;br&gt;<br /> &nbsp;&nbsp;&lt;input&nbsp;type="text"&nbsp;name="lastname"&nbsp;value="Mouse"&gt;&lt;br&gt;&lt;br&gt;<br /> &nbsp;&nbsp;&lt;input&nbsp;type="submit"&nbsp;value="Submit"&gt;<br /> &lt;/form&gt;</p>
+<h2>Grouping Form Data with &lt;fieldset&gt;</h2>
+<p>The&nbsp;&lt;fieldset&gt;&nbsp;element is used to group related data in a form.</p>
+<p>The&nbsp;&lt;legend&gt;&nbsp;element defines a caption for the&nbsp;&lt;fieldset&gt;&nbsp;element.</p>
+<h3>Example</h3>
+<p>&lt;form&nbsp;action="/action_page.php"&gt;<br /> &nbsp;&nbsp;&lt;fieldset&gt;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Personal information:&lt;/legend&gt;<br /> &nbsp;&nbsp;&nbsp; First name:&lt;br&gt;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;type="text"&nbsp;name="firstname"&nbsp;value="Mickey"&gt;&lt;br&gt;<br /> &nbsp;&nbsp;&nbsp; Last name:&lt;br&gt;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;type="text"&nbsp;name="lastname"&nbsp;value="Mouse"&gt;&lt;br&gt;&lt;br&gt;<br /> &nbsp;&nbsp;&nbsp;&nbsp;&lt;input&nbsp;type="submit"&nbsp;value="Submit"&gt;<br /> &nbsp;&nbsp;&lt;/fieldset&gt;<br /> &lt;/form&gt;</p>
+<p>&nbsp;</p>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<p>Personal information:First name:<br /> &nbsp;<br /> Last name:<br /> &nbsp;</p>

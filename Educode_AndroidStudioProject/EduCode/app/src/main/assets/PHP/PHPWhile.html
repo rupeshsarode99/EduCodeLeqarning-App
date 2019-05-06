@@ -1,0 +1,31 @@
+<h1>PHP 5&nbsp;while&nbsp;Loops</h1>
+<p>PHP while loops execute a block of code while the specified condition is true.</p>
+<h2>PHP Loops</h2>
+<p>Often when you write code, you want the same block of code to run over and over again in a row. Instead of adding several almost equal code-lines in a script, we can use loops to perform a task like this.</p>
+<p>In PHP, we have the following looping statements:</p>
+<ul>
+<li>while&nbsp;- loops through a block of code as long as the specified condition is true</li>
+<li>do...while&nbsp;- loops through a block of code once, and then repeats the loop as long as the specified condition is true</li>
+<li>for&nbsp;- loops through a block of code a specified number of times</li>
+<li>foreach&nbsp;- loops through a block of code for each element in an array</li>
+</ul>
+<h2>The PHP while Loop</h2>
+<p>The&nbsp;while&nbsp;loop executes a block of code as long as the specified condition is true.</p>
+<h3>Syntax</h3>
+<p>while (<em>condition is true</em>) {<br /> <em>&nbsp;&nbsp;&nbsp; code to be executed</em>;<br /> }</p>
+<p>The example below first sets a variable $x to 1 ($x = 1). Then, the while loop will continue to run as long as $x is less than, or equal to 5 ($x &lt;= 5). $x will increase by 1 each time the loop runs ($x++):</p>
+<h3>Example</h3>
+<p>&lt;?php&nbsp;<br /> $x =&nbsp;1;&nbsp;<br /> <br /> while($x &lt;=&nbsp;5) {<br /> &nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;"The number is: $x &lt;br&gt;";<br /> &nbsp;&nbsp;&nbsp; $x++;<br /> }&nbsp;<br /> ?&gt;</p>
+<h2>The PHP do...while Loop</h2>
+<p>The&nbsp;do...while&nbsp;loop will always execute the block of code once, it will then check the condition, and repeat the loop while the specified condition is true.</p>
+<h3>Syntax</h3>
+<p>do {<br /> <em>&nbsp; &nbsp; code to be executed;<br /> </em>} while (<em>condition is true</em>);</p>
+<p>The example below first sets a variable $x to 1 ($x = 1). Then, the do while loop will write some output, and then increment the variable $x with 1. Then the condition is checked (is $x less than, or equal to 5?), and the loop will continue to run as long as $x is less than, or equal to 5:</p>
+<h3>Example</h3>
+<p>&lt;?php&nbsp;<br /> $x =&nbsp;1;&nbsp;<br /> <br /> do&nbsp;{<br /> &nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;"The number is: $x &lt;br&gt;";<br /> &nbsp;&nbsp;&nbsp; $x++;<br /> }&nbsp;while&nbsp;($x &lt;=&nbsp;5);<br /> ?&gt;</p>
+<p>Notice that in a&nbsp;do while&nbsp;loop the condition is tested AFTER executing the statements within the loop. This means that the&nbsp;do while&nbsp;loop would execute its statements at least once, even if the condition is false the first time.</p>
+<p>The example below sets the $x variable to 6, then it runs the loop,&nbsp;<strong>and then the condition is checked</strong>:</p>
+<h3>Example</h3>
+<p>&lt;?php&nbsp;<br /> $x =&nbsp;6;<br /> <br /> do&nbsp;{<br /> &nbsp; &nbsp;&nbsp;echo&nbsp;"The number is: $x &lt;br&gt;";<br /> &nbsp;&nbsp;&nbsp; $x++;<br /> }&nbsp;while&nbsp;($x &lt;=&nbsp;5);<br /> ?&gt;</p>
+<p>The&nbsp;for&nbsp;loop and the&nbsp;foreach&nbsp;loop will be explained in the next chapter.</p>
+<p>&nbsp;</p>

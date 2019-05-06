@@ -1,0 +1,667 @@
+<p><strong>PHP 5&nbsp;</strong><strong>Operators</strong></p>
+<p>PHP Operators</p>
+<p>Operators are used to perform operations on variables and values.</p>
+<p>PHP divides the operators in the following groups:</p>
+<ul>
+<li>Arithmetic operators</li>
+<li>Assignment operators</li>
+<li>Comparison operators</li>
+<li>Increment/Decrement operators</li>
+<li>Logical operators</li>
+<li>String operators</li>
+<li>Array operators</li>
+</ul>
+<p>PHP Arithmetic Operators</p>
+<p>The PHP arithmetic operators are used with numeric values to perform common arithmetical operations, such as addition, subtraction, multiplication etc.</p>
+<table width="697">
+<tbody>
+<tr>
+<td width="103">
+<p><strong>Operator</strong></p>
+</td>
+<td width="137">
+<p><strong>Name</strong></p>
+</td>
+<td width="136">
+<p><strong>Example</strong></p>
+</td>
+<td width="237">
+<p><strong>Result</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>+</p>
+</td>
+<td>
+<p>Addition</p>
+</td>
+<td>
+<p>$x + $y</p>
+</td>
+<td>
+<p>Sum of $x and $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>-</p>
+</td>
+<td>
+<p>Subtraction</p>
+</td>
+<td>
+<p>$x - $y</p>
+</td>
+<td>
+<p>Difference of $x and $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>*</p>
+</td>
+<td>
+<p>Multiplication</p>
+</td>
+<td>
+<p>$x * $y</p>
+</td>
+<td>
+<p>Product of $x and $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>/</p>
+</td>
+<td>
+<p>Division</p>
+</td>
+<td>
+<p>$x / $y</p>
+</td>
+<td>
+<p>Quotient of $x and $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>%</p>
+</td>
+<td>
+<p>Modulus</p>
+</td>
+<td>
+<p>$x % $y</p>
+</td>
+<td>
+<p>Remainder of $x divided by $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>**</p>
+</td>
+<td>
+<p>Exponentiation</p>
+</td>
+<td>
+<p>$x ** $y</p>
+</td>
+<td>
+<p>Result of raising $x to the $y'th power (Introduced in PHP 5.6)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>PHP Assignment Operators</p>
+<p>The PHP assignment operators are used with numeric values to write a value to a variable.</p>
+<p>The basic assignment operator in PHP is "=". It means that the left operand gets set to the value of the assignment expression on the right.</p>
+<table width="697">
+<tbody>
+<tr>
+<td width="104">
+<p><strong>Assignment</strong></p>
+</td>
+<td width="136">
+<p><strong>Same as...</strong></p>
+</td>
+<td width="374">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>x = y</p>
+</td>
+<td>
+<p>x = y</p>
+</td>
+<td>
+<p>The left operand gets set to the value of the expression on the right</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>x += y</p>
+</td>
+<td>
+<p>x = x + y</p>
+</td>
+<td>
+<p>Addition</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>x -= y</p>
+</td>
+<td>
+<p>x = x - y</p>
+</td>
+<td>
+<p>Subtraction</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>x *= y</p>
+</td>
+<td>
+<p>x = x * y</p>
+</td>
+<td>
+<p>Multiplication</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>x /= y</p>
+</td>
+<td>
+<p>x = x / y</p>
+</td>
+<td>
+<p>Division</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>x %= y</p>
+</td>
+<td>
+<p>x = x % y</p>
+</td>
+<td>
+<p>Modulus</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>PHP Comparison Operators</p>
+<p>The PHP comparison operators are used to compare two values (number or string):</p>
+<table width="697">
+<tbody>
+<tr>
+<td width="103">
+<p><strong>Operator</strong></p>
+</td>
+<td width="150">
+<p><strong>Name</strong></p>
+</td>
+<td width="104">
+<p><strong>Example</strong></p>
+</td>
+<td width="257">
+<p><strong>Result</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>==</p>
+</td>
+<td>
+<p>Equal</p>
+</td>
+<td>
+<p>$x == $y</p>
+</td>
+<td>
+<p>Returns true if $x is equal to $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>===</p>
+</td>
+<td>
+<p>Identical</p>
+</td>
+<td>
+<p>$x === $y</p>
+</td>
+<td>
+<p>Returns true if $x is equal to $y, and they are of the same type</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>!=</p>
+</td>
+<td>
+<p>Not equal</p>
+</td>
+<td>
+<p>$x != $y</p>
+</td>
+<td>
+<p>Returns true if $x is not equal to $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&lt;&gt;&nbsp;</p>
+</td>
+<td>
+<p>Not equal</p>
+</td>
+<td>
+<p>$x &lt;&gt; $y</p>
+</td>
+<td>
+<p>Returns true if $x is not equal to $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>!==</p>
+</td>
+<td>
+<p>Not identical</p>
+</td>
+<td>
+<p>$x !== $y</p>
+</td>
+<td>
+<p>Returns true if $x is not equal to $y, or they are not of the same type</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&gt;&nbsp;</p>
+</td>
+<td>
+<p>Greater than</p>
+</td>
+<td>
+<p>$x &gt; $y</p>
+</td>
+<td>
+<p>Returns true if $x is greater than $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&lt;&nbsp;</p>
+</td>
+<td>
+<p>Less than</p>
+</td>
+<td>
+<p>$x &lt; $y</p>
+</td>
+<td>
+<p>Returns true if $x is less than $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&gt;=</p>
+</td>
+<td>
+<p>Greater than or equal to</p>
+</td>
+<td>
+<p>$x &gt;= $y</p>
+</td>
+<td>
+<p>Returns true if $x is greater than or equal to $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&lt;=</p>
+</td>
+<td>
+<p>Less than or equal to</p>
+</td>
+<td>
+<p>$x &lt;= $y</p>
+</td>
+<td>
+<p>Returns true if $x is less than or equal to $y</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>PHP Increment / Decrement Operators</p>
+<p>The PHP increment operators are used to increment a variable's value.</p>
+<p>The PHP decrement operators are used to decrement a variable's value.</p>
+<table width="697">
+<tbody>
+<tr>
+<td width="103">
+<p><strong>Operator</strong></p>
+</td>
+<td width="137">
+<p><strong>Name</strong></p>
+</td>
+<td width="373">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>++$x</p>
+</td>
+<td>
+<p>Pre-increment</p>
+</td>
+<td>
+<p>Increments $x by one, then returns $x</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>$x++</p>
+</td>
+<td>
+<p>Post-increment</p>
+</td>
+<td>
+<p>Returns $x, then increments $x by one</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>--$x</p>
+</td>
+<td>
+<p>Pre-decrement</p>
+</td>
+<td>
+<p>Decrements $x by one, then returns $x</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>$x--</p>
+</td>
+<td>
+<p>Post-decrement</p>
+</td>
+<td>
+<p>Returns $x, then decrements $x by one</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>PHP Logical Operators</p>
+<p>The PHP logical operators are used to combine conditional statements.</p>
+<table width="697">
+<tbody>
+<tr>
+<td width="103">
+<p><strong>Operator</strong></p>
+</td>
+<td width="137">
+<p><strong>Name</strong></p>
+</td>
+<td width="137">
+<p><strong>Example</strong></p>
+</td>
+<td width="237">
+<p><strong>Result</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>and</p>
+</td>
+<td>
+<p>And</p>
+</td>
+<td>
+<p>$x and $y</p>
+</td>
+<td>
+<p>True if both $x and $y are true</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>or</p>
+</td>
+<td>
+<p>Or</p>
+</td>
+<td>
+<p>$x or $y</p>
+</td>
+<td>
+<p>True if either $x or $y is true</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>xor</p>
+</td>
+<td>
+<p>Xor</p>
+</td>
+<td>
+<p>$x xor $y</p>
+</td>
+<td>
+<p>True if either $x or $y is true, but not both</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&amp;&amp;</p>
+</td>
+<td>
+<p>And</p>
+</td>
+<td>
+<p>$x &amp;&amp; $y</p>
+</td>
+<td>
+<p>True if both $x and $y are true</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>||</p>
+</td>
+<td>
+<p>Or</p>
+</td>
+<td>
+<p>$x || $y</p>
+</td>
+<td>
+<p>True if either $x or $y is true</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>!</p>
+</td>
+<td>
+<p>Not</p>
+</td>
+<td>
+<p>!$x</p>
+</td>
+<td>
+<p>True if $x is not true</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>PHP String Operators</p>
+<p>PHP has two operators that are specially designed for strings.</p>
+<table width="697">
+<tbody>
+<tr>
+<td width="103">
+<p><strong>Operator</strong></p>
+</td>
+<td width="170">
+<p><strong>Name</strong></p>
+</td>
+<td width="170">
+<p><strong>Example</strong></p>
+</td>
+<td width="170">
+<p><strong>Result</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>.</p>
+</td>
+<td>
+<p>Concatenation</p>
+</td>
+<td>
+<p>$txt1 . $txt2</p>
+</td>
+<td>
+<p>Concatenation of $txt1 and $txt2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>.=</p>
+</td>
+<td>
+<p>Concatenation assignment</p>
+</td>
+<td>
+<p>$txt1 .= $txt2</p>
+</td>
+<td>
+<p>Appends $txt2 to $txt1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>PHP Array Operators</p>
+<p>The PHP array operators are used to compare arrays.</p>
+<table width="697">
+<tbody>
+<tr>
+<td width="103">
+<p><strong>Operator</strong></p>
+</td>
+<td width="123">
+<p><strong>Name</strong></p>
+</td>
+<td width="117">
+<p><strong>Example</strong></p>
+</td>
+<td width="271">
+<p><strong>Result</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>+</p>
+</td>
+<td>
+<p>Union</p>
+</td>
+<td>
+<p>$x + $y</p>
+</td>
+<td>
+<p>Union of $x and $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>==</p>
+</td>
+<td>
+<p>Equality</p>
+</td>
+<td>
+<p>$x == $y</p>
+</td>
+<td>
+<p>Returns true if $x and $y have the same key/value pairs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>===</p>
+</td>
+<td>
+<p>Identity</p>
+</td>
+<td>
+<p>$x === $y</p>
+</td>
+<td>
+<p>Returns true if $x and $y have the same key/value pairs in the same order and of the same types</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>!=</p>
+</td>
+<td>
+<p>Inequality</p>
+</td>
+<td>
+<p>$x != $y</p>
+</td>
+<td>
+<p>Returns true if $x is not equal to $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>&lt;&gt;&nbsp;</p>
+</td>
+<td>
+<p>Inequality</p>
+</td>
+<td>
+<p>$x &lt;&gt; $y</p>
+</td>
+<td>
+<p>Returns true if $x is not equal to $y</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>!==</p>
+</td>
+<td>
+<p>Non-identity</p>
+</td>
+<td>
+<p>$x !== $y</p>
+</td>
+<td>
+<p>Returns true if $x is not identical to $y</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

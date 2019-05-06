@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<p>
+	<h2>JAVA if statement</h2>
+An if statement consists of a Boolean expression followed by one or more statements.
+<h3>Syntax</h3>
+Following is the syntax of an if statement −
+
+<pre>
+&nbspif(Boolean_expression) {
+   &nbsp// Statements will execute if the Boolean expression is true
+&nbsp}
+</pre></div>
+If the Boolean expression evaluates to true then the block of code inside the if statement will be executed. If not, the first set of code after the end of the if statement (after the closing curly brace) will be executed.\
+
+Example
+ 
+
+<pre>
+&nbsppublic class Test {
+
+&nbsp   public static void main(String args[]) {
+     &nbsp int x = 10;
+
+      &nbspif( x < 20 ) {
+         &nbspSystem.out.print("This is if statement");
+      &nbsp}
+   &nbsp}
+&nbsp}
+
+&nbsp<b>Output:-</b><br>
+    &nbspThis is if statement.
+</pre></div>
+<h2>if...else statement</h2>
+An if statement can be followed by an optional else statement, which executes when the Boolean expression is false.
+<h3>Syntax</h3>
+
+Following is the syntax of an if...else statement −
+
+<pre>
+&nbspif(Boolean_expression) {
+   &nbsp// Executes when the Boolean expression is true
+&nbsp}else {
+   &nbsp// Executes when the Boolean expression is false
+&nbsp}
+</pre></div>
+If the boolean expression evaluates to true, then the if block of code will be executed, otherwise else block of code will be executed.
+<h3>Example</h3>
+
+<pre>
+&nbsppublic class Test {
+
+&nbsp   public static void main(String args[]) {
+     &nbsp int x = 30;
+
+      &nbspif( x < 20 ) {
+      &nbsp   System.out.print("This is if statement");
+      &nbsp}else {
+         &nbspSystem.out.print("This is else statement");
+      &nbsp}
+   &nbsp}
+&nbsp}
+
+&nbsp<b>Output:-</b><br>
+    &nbspThis is else statement
+</pre></div>
+<h2>nested if statement</h2>
+It is always legal to nest if-else statements which means you can use one if or else if statement inside another if or else if statement.
+<h3>Syntax</h3>
+
+The syntax for a nested if...else is as follows −
+
+<pre>
+&nbspif(Boolean_expression 1) {
+   &nbsp// Executes when the Boolean expression 1 is true
+   &nbspif(Boolean_expression 2) {
+   &nbsp   // Executes when the Boolean expression 2 is true
+   &nbsp}
+&nbsp}
+</pre></div>
+You can nest else if...else in the similar way as we have nested if statement.
+<h3>Example</h3>
+
+<pre>
+&nbsppublic class Test {
+
+&nbsp   public static void main(String args[]) {
+     &nbsp int x = 30;
+      &nbspint y = 10;
+
+      &nbspif( x == 30 ) {
+         &nbspif( y == 10 ) {
+            &nbspSystem.out.print("X = 30 and Y = 10");
+         &nbsp}
+      &nbsp}
+   &nbsp}
+&nbsp}
+&nbsp<b>Output :-</b>
+&nbspX = 30 and Y = 10
+</pre></div>
+<h2>Switch statement</h2>
+A switch statement allows a variable to be tested for equality against a list of values. Each value is called a case, and the variable being switched on is checked for each case.
+<h3>Syntax</h3>
+The syntax of enhanced for loop is −
+
+<pre>
+&nbspswitch(expression) {
+   &nbspcase value :
+      &nbsp// Statements
+      &nbsp break; // optional
+   
+   &nbspcase value :
+      &nbsp// Statements
+      &nbsp break; // optional
+   
+   &nbsp// You can have any number of case statements.
+   &nbspdefault : // Optional
+      &nbsp// Statements
+&nbsp}
+</pre>
+</div>
+The following rules apply to a switch statement −
+
+The variable used in a switch statement can only be integers, convertable integers (byte, short, char), strings and enums.
+
+You can have any number of case statements within a switch. Each case is followed by the value to be compared to and a colon.
+
+The value for a case must be the same data type as the variable in the switch and it must be a constant or a literal.
+
+When the variable being switched on is equal to a case, the statements following that case will execute until a break statement is reached.
+
+When a break statement is reached, the switch terminates, and the flow of control jumps to the next line following the switch statement.
+
+Not every case needs to contain a break. If no break appears, the flow of control will fall through to subsequent cases until a break is reached.
+
+A switch statement can have an optional default case, which must appear at the end of the switch. The default case can be used for performing a task when none of the cases is true. No break is needed in the default case.
+
+
+<pre>
+&nbsppublic class Test {
+
+&nbsp  public class Test {
+
+&nbsp   public static void main(String args[]) {
+     &nbsp // char grade = args[0].charAt(0);
+      &nbspchar grade = 'C';
+
+&nbsp      switch(grade) {
+         &nbspcase 'A' :
+            &nbspSystem.out.println("Excellent!"); 
+            &nbsp break;
+         &nbspcase 'B' :
+         &nbspcase 'C' :
+            &nbspSystem.out.println("Well done");
+            &nbsp break;
+         &nbspcase 'D' :
+            &nbspSystem.out.println("You passed");
+         &nbspcase 'F' :
+            &nbspSystem.out.println("Better try again");
+            &nbsp break;
+         &nbspdefault :
+            &nbspSystem.out.println("Invalid grade");
+      &nbsp}
+      &nbspSystem.out.println("Your grade is " + grade);
+   &nbsp}
+&nbsp} 
+&nbspCompile and run the above program using various command line arguments. This will produce the following result −
+&nbsp<b>Output :-</b>
+&nbspWell done
+&nbspYour grade is C
+</pre></div>
+</p>
+</body>
+</html>

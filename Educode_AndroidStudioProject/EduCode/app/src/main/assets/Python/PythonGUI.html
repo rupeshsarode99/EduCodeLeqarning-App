@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<h1>Python GUI</h1>
+<p>
+Python provides several different options for writing GUI based programs. These are listed below: <ul><li><strong>Tkinter</strong>: It is the easiest among all to get started with. It is Python's standard GUI (Graphical User Interface) package. It is the most commonly used toolkit for GUI Programming in Python.</li><li><strong>JPython</strong>: It is the Python platform for Java that is providing Python scripts seamless access o Java class Libraries for the local machine.</li><li><strong>wxPython</strong>: It is open-source, cross-platform GUI toolkit written in C++. It one of the alternatives to Tkinter, which is bundled with Python.</li></ul><p>There are many other interfaces available for GUI. But these are the most commonly used ones. In this, we will learn about the basic GUI programming using Tkinter. <h2>Using Tkinter</h2><p>It is the standard GUI toolkit for Python. Fredrik Lundh wrote it. For modern Tk binding, Tkinter is implemented as a Python wrapper for the Tcl Interpreter embedded within the interpreter of Python. Tk provides the following widgets: <ul><li>button</li><li>canvas</li><li>combo-box</li><li>frame</li><li>level</li><li>check-button</li><li>entry</li><li>level-frame</li><li>menu</li><li>list - box</li><li>menu button</li><li>message</li><li>tk_optoinMenu</li><li>progress-bar</li><li>radio button</li><li>scroll bar</li><li>separator</li><li>tree-view and many more...</li></ul><p><span style="text-decoration: underline;">Creating a GUI program using this Tkinter is simple. For this programmers need to follow the steps mentioned below:</span> <ol><li>Import the module Tkinter</li><li>Build a GUI application (as a window)</li><li>Add those widgets that are mentioned above</li><li>Enter the primary, i.e., main event's loop for taking action when the user triggered the event.</li></ol><hr>
+<h3>A Sample Program Using Tkinter</h3><p>In this program, it is shown how Tkinter is used via Python to built windows along with some buttons and the events that are programmed using these buttons. <div class="example">Example:</div><pre><code class="prettyprint">
+
+	
+import tkinter as tk
+from tkinter import *
+from tkinter import ttk
+
+class karl( Frame ):
+    def __init__( self ):
+        tk.Frame.__init__(self)
+        self.pack()
+        self.master.title("Karlos")
+        self.button1 = Button( self, text = "CLICK HERE", width = 25,
+                               command = self.new_window )
+        self.button1.grid( row = 0, column = 1, columnspan = 2, sticky = W+E+N+S )
+    def new_window(self):
+        self.newWindow = karl2()
+class karl2(Frame):     
+    def __init__(self):
+        new =tk.Frame.__init__(self)
+        new = Toplevel(self)
+        new.title("karlos More Window")
+        new.button = tk.Button(  text = "PRESS TO CLOSE", width = 25,
+                                 command = self.close_window )
+        new.button.pack()
+    def close_window(self):
+        self.destroy()
+def main(): 
+    karl().mainloop()
+if __name__ == '__main__':
+    main()</div></code></pre><h2>Standard Attributed for GUI</h2><ul><li>Dimensions</li><li>Fonts</li><li>Colors</li><li>Cursors</li><li>Anchors</li><li>Bitmaps</li></ul><h2>Methods For Geometry Management</h2><ul><li><strong>The pack()</strong>: This method manages the geometry of widgets in blocks</li><li><strong>The grid()</strong>: This method organizes widgets in a tabular structure</li><li><strong>The place()</strong>: This method organizes the widgets to place them in a specific position</li></ul>
+
+
+
+</p>
+</body>
+</html>

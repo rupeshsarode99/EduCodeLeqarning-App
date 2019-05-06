@@ -1,0 +1,113 @@
+<h2>Python Decision Making</h2>
+<h4>Python&nbsp;If ... Else</h4>
+<h5>Python Conditions and If statements</h5>
+<p>Python supports the usual logical conditions from mathematics:</p>
+<ul>
+	<li>Equals:&nbsp;a == b</li>
+	<li>Not Equals:&nbsp;a != b</li>
+	<li>Less than:&nbsp;a &lt; b</li>
+	<li>Less than or equal to:&nbsp;a &lt;= b</li>
+	<li>Greater than:&nbsp;a &gt; b</li>
+	<li>Greater than or equal to:&nbsp;a &gt;= b</li>
+</ul>
+<p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+<p>An "if statement" is written by using the&nbsp;if&nbsp;keyword.</p>
+<h3>Example</h3>
+<p>If statement:</p>
+<p>a =&nbsp;33<br /> b =&nbsp;200<br /> if&nbsp;b &gt; a:<br /> &nbsp;&nbsp;print("b is greater than a")</p>
+<p>In this example we use two variables,&nbsp;a&nbsp;and&nbsp;b, which are used as part of the if statement to test whether&nbsp;b&nbsp;is greater than&nbsp;a. As&nbsp;a&nbsp;is&nbsp;33, and&nbsp;b&nbsp;is&nbsp;200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".</p>
+<h2>Indentation</h2>
+<p>Python relies on indentation, using whitespace, to define scope in the code. Other programming languages often use curly-brackets for this purpose.</p>
+<h3>Example</h3>
+<p>If statement, without indentation (will raise an error):</p>
+<p>a =&nbsp;33<br /> b =&nbsp;200<br /> if&nbsp;b &gt; a:<br /> print("b is greater than a")&nbsp;# you will get an error</p>
+<p><strong>Elif</strong></p>
+<p>The&nbsp;elif&nbsp;keyword is pythons way of saying "if the previous conditions were not true, then try this condition".</p>
+<h3>Example</h3>
+<p>a =&nbsp;33<br /> b =&nbsp;33<br /> if&nbsp;b &gt; a:<br /> &nbsp;&nbsp;print("b is greater than a")<br /> elif&nbsp;a == b:<br /> &nbsp;&nbsp;print("a and b are equal")<br /> </p>
+<p>In this example&nbsp;a&nbsp;is equal to&nbsp;b, so the first condition is not true, but the&nbsp;elif&nbsp;condition is true, so we print to screen that "a and b are equal".</p>
+<h2>Else</h2>
+<p>The&nbsp;else&nbsp;keyword catches anything which isn't caught by the preceding conditions.</p>
+<h3>Example</h3>
+<p>a =&nbsp;200<br /> b =&nbsp;33<br /> if&nbsp;b &gt; a:<br /> &nbsp;&nbsp;print("b is greater than a")<br /> elif&nbsp;a == b:<br /> &nbsp;&nbsp;print("a and b are equal")<br /> else:<br /> &nbsp;&nbsp;print("a is greater than b")<br /> </p>
+<p>In this example&nbsp;a&nbsp;is greater to&nbsp;b, so the first condition is not true, also the&nbsp;elif&nbsp;condition is not true, so we go to the&nbsp;else&nbsp;condition and print to screen that "a is greater than b".</p>
+<p>You can also have an&nbsp;else&nbsp;without the&nbsp;elif:</p>
+<h3>Example</h3>
+<p>a =&nbsp;200<br /> b =&nbsp;33<br /> if&nbsp;b &gt; a:<br /> &nbsp;&nbsp;print("b is greater than a")<br /> else:<br /> &nbsp;&nbsp;print("b is not greater than a")<br /> <strong>Short Hand If</strong></p>
+<p>If you have only one statement to execute, you can put it on the same line as the if statement.</p>
+<h3>Example</h3>
+<p>One line if statement:</p>
+<p>if&nbsp;a &gt; b:&nbsp;print("a is greater than b")</p>
+<p><strong>Short Hand If ... Else</strong></p>
+<p>If you have only one statement to execute, one for if, and one for else, you can put it all on the same line:</p>
+<h3>Example</h3>
+<p>One line if else statement:</p>
+<p>print("A")&nbsp;if&nbsp;a &gt; b&nbsp;else&nbsp;print("B")</p>
+<p>You can also have multiple else statements on the same line:</p>
+<h3>Example</h3>
+<p>One line if else statement, with 3 conditions:</p>
+<p>print("A")&nbsp;if&nbsp;a &gt; b&nbsp;else&nbsp;print("=")&nbsp;if&nbsp;a == b&nbsp;else&nbsp;print("B")</p>
+<p><strong>And</strong></p>
+<p>The&nbsp;and&nbsp;keyword is a logical operator, and is used to combine conditional statements:</p>
+<h3>Example</h3>
+<p>Test if&nbsp;a&nbsp;is greater than&nbsp;b, AND if&nbsp;c&nbsp;is greater than&nbsp;a:</p>
+<p>if&nbsp;a &gt; b and c &gt; a:<br /> &nbsp;&nbsp;print("Both conditions are True")<br /> </p>
+<p><strong>Or</strong></p>
+<p>The&nbsp;or&nbsp;keyword is a logical operator, and is used to combine conditional statements:</p>
+<h3>Example</h3>
+<p>Test if&nbsp;a&nbsp;is greater than&nbsp;b, OR if&nbsp;a&nbsp;is greater than&nbsp;c:</p>
+<p>if&nbsp;a &gt; b or a &gt; c:<br /> &nbsp;&nbsp;print("At least one of the conditions are True")</p>
+<p>&nbsp;</p>
+<p>Decision making is anticipation of conditions occurring while execution of the program and specifying actions taken according to the conditions.</p>
+<p>Decision structures evaluate multiple expressions which produce TRUE or FALSE as outcome. You need to determine which action to take and which statements to execute if outcome is TRUE or FALSE otherwise.</p>
+<p>&nbsp;</p>
+<p>Python programming language assumes any&nbsp;<strong>non-zero</strong>&nbsp;and&nbsp;<strong>non-null</strong>&nbsp;values as TRUE, and if it is either&nbsp;<strong>zero</strong>&nbsp;or&nbsp;<strong>null</strong>, then it is assumed as FALSE value.</p>
+<p>Python programming language provides following types of decision making statements. Click the following links to check their detail.</p>
+<table width="604">
+	<tbody>
+	<tr>
+		<td>
+			<p><strong>Sr.No.</strong></p>
+		</td>
+		<td>
+			<p><strong>Statement &amp; Description</strong></p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p>1</p>
+		</td>
+		<td>
+			<p><a href="https://www.tutorialspoint.com/python/python_if_statement.htm"><strong>if statements</strong></a></p>
+			<p>An&nbsp;<strong>if statement</strong>&nbsp;consists of a boolean expression followed by one or more statements.</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p>2</p>
+		</td>
+		<td>
+			<p><a href="https://www.tutorialspoint.com/python/python_if_else.htm"><strong>if...else statements</strong></a></p>
+			<p>An&nbsp;<strong>if statement</strong>&nbsp;can be followed by an optional&nbsp;<strong>else statement</strong>, which executes when the boolean expression is FALSE.</p>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p>3</p>
+		</td>
+		<td>
+			<p><a href="https://www.tutorialspoint.com/python/nested_if_statements_in_python.htm"><strong>nested if statements</strong></a></p>
+			<p>You can use one&nbsp;<strong>if</strong>&nbsp;or&nbsp;<strong>else if</strong>&nbsp;statement inside another&nbsp;<strong>if</strong>&nbsp;or&nbsp;<strong>else if</strong>statement(s).</p>
+		</td>
+	</tr>
+	</tbody>
+</table>
+<p>Let us go through each decision making briefly &minus;</p>
+<h2>Single Statement Suites</h2>
+<p>If the suite of an&nbsp;<strong>if</strong>&nbsp;clause consists only of a single line, it may go on the same line as the header statement.</p>
+<p>Here is an example of a&nbsp;<strong>one-line if</strong>&nbsp;clause &minus;</p>
+<p>#!/usr/bin/python&nbsp;var = 100if ( var == 100 ) : print "Value of expression is 100"print "Good bye!"</p>
+<p>When the above code is executed, it produces the following result &minus;</p>
+<p>Value of expression is 100 Good bye!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
